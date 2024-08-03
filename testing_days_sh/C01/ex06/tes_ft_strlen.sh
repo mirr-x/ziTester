@@ -46,6 +46,6 @@ fi
 
 echo -e "${YELLOW}***************************************************************************************************${RESET}"
 # clean the mess
-rm $path_exe
+rm $path_exe $path_user_output $path_diff_output
 
 exit $status
