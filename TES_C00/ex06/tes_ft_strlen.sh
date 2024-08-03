@@ -12,6 +12,7 @@ GREEN='\033[32m'
 RED='\033[31m'
 YELLOW='\033[33m'
 RESET='\033[0m'
+PURPLE='\033[35m'
 
 # run the code and compile it with the main file
 gcc -Wall -Wextra -Werror $path_main $path_file -o $path_exe
@@ -30,17 +31,20 @@ status=0
 if [ $size_diff_output -eq 0 ]
 then
     status=1
-    echo -e "${YELLOW}******************************************************${RESET}"
+    echo -e "${YELLOW}***************************************************************************************************${RESET}"
     echo -e "${GREEN} -> $path_file OK ${RESET}"
 else
     status=-1
-    echo -e "${YELLOW}******************************************************${RESET}"
+    echo -e "${YELLOW}***************************************************************************************************${RESET}"
     echo -e "${RED} -> $path_file KO ${RESET}"
-    echo -e "Here is the diff output \n\t < expected_output | > user_output"
-    cat $path_diff_output
+    echo -e "${RED}\n\t\t !! HERE IS THE DIFF OUTPUT !! ${RESET}"
+    echo -e "${PURPLE}\n\t\t\t > YOUR_OUTPUT${RESET}"
+    cat $path_user_output
+    echo -e "${PURPLE}\n\t\t\t < EXPECTED_OUTPUT${RESET}"
+    cat $path_expected_output
 fi
 
-echo -e "${YELLOW}******************************************************${RESET}"
+echo -e "${YELLOW}***************************************************************************************************${RESET}"
 # clean the mess
 rm $path_exe
 
