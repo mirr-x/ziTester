@@ -180,7 +180,7 @@ void z_C01_ex06()
     if (access("ft_strlen.c", F_OK) == 0)
     {
         // will run an sh file to test this shit
-        //@ continue here
+        //@ cotinnue here
     }
     else
     {
