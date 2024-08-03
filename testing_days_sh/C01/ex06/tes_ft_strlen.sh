@@ -1,11 +1,11 @@
 #!/bin/bash
 
-path_main=/home/$USER/ZiTester/TES_C00/ex06/main.c
-path_exe=/home/$USER/ZiTester/TES_C00/ex06/user_exe
-path_file=ex00/ft_strlen.c
-path_expected_output=/home/$USER/ZiTester/TES_C00/ex06/expected_output
-path_user_output=/home/$USER/ZiTester/TES_C00/ex06/user_output
-path_diff_output=/home/$USER/ZiTester/TES_C00/ex06/diff_output
+path_main=/home/$USER/ZiTester/main-files_days/C01/ex06/main.c
+path_exe=/home/$USER/ZiTester/main-files_days/C01/ex06/user_exe
+path_file=ex06/ft_strlen.c
+path_expected_output=/home/$USER/ZiTester/main-files_days/C01/ex06/expected_output
+path_user_output=/home/$USER/ZiTester/main-files_days/C01/ex06/user_output
+path_diff_output=/home/$USER/ZiTester/main-files_days/C01/ex06/diff_output
 
 # colors
 GREEN='\033[32m'
