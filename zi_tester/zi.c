@@ -109,10 +109,10 @@ void z_test_day_folder(char *folder_nm)
 {
     if (strcmp(folder_nm, "C00") == 0)
     {
-        zi_TES_C00();
     }
     else if (strcmp(folder_nm, "C01") == 0)
     {
+        zi_TES_C01();
     }
     else if (strcmp(folder_nm, "C02") == 0)
     {
@@ -144,7 +144,7 @@ void z_test_day_folder(char *folder_nm)
 
 }
 
-void zi_TES_C00() /* day : C00 */
+void zi_TES_C01() /* day : C01 */
 {
     char *exrcices[] = {"ex00", "ex01", "ex02", "ex03", "ex04", "ex05", "ex06", "ex07", "ex08"};
     char **curunt_ex_folders = get_valid_days_folders(exrcices, MAX_EX_C00); //@ NEED freeing
@@ -156,7 +156,7 @@ void zi_TES_C00() /* day : C00 */
         if (check_if_ex_folder_exist(exrcices, curunt_ex_folders[i], MAX_EX_C00) == 1)
         {
             printf("\t\t\t%s[✔️] Folder %s Found%s\n", green, curunt_ex_folders[i], reset);
-            z_test_C00_ex_folder(curunt_ex_folders[i]);
+            z_test_C01_ex_folder(curunt_ex_folders[i]);
         }
         else
         {
@@ -164,9 +164,17 @@ void zi_TES_C00() /* day : C00 */
         }
         i++;
     }
+    i = 0;
+    while (curunt_ex_folders[i] != NULL) //@ freeing
+    {
+        free(curunt_ex_folders[i]);
+        i++;
+    }
+    free(curunt_ex_folders);
+    
 }
 
-void z_C00_ex00()
+void z_C01_ex06()
 {
     /* check if file exist */
     if (access("ft_strlen.c", F_OK) == 0)
@@ -179,26 +187,46 @@ void z_C00_ex00()
         printf("- %s[❌] file 'ft_putchar.c' Not Found%s\n", red, reset);
     }
 }
-
-void z_test_C00_ex_folder(char *ex_folder)
+void z_test_C01_ex_folder(char *ex_folder)
 {
-    if (strcmp(ex_folder, "ex00"))
+    if (strcmp(ex_folder, "ex00") == 0)
     {
-        z_C00_ex00();
+        // Add code for ex00
     }
-    else if (strcmp(ex_folder, "ex01"))
+    else if (strcmp(ex_folder, "ex01") == 0)
     {
+        // Add code for ex01
     }
-    else if (strcmp(ex_folder, "ex02"))
+    else if (strcmp(ex_folder, "ex02") == 0)
     {
+        // Add code for ex02
     }
-    else if (strcmp(ex_folder, "ex03"))
+    else if (strcmp(ex_folder, "ex03") == 0)
     {
+        // Add code for ex03
     }
-    else if (strcmp(ex_folder,"ex04"))
+    else if (strcmp(ex_folder, "ex04") == 0)
     {
+        // Add code for ex04
+    }
+    else if (strcmp(ex_folder, "ex05") == 0)
+    {
+        // Add code for ex05
+    }
+    else if (strcmp(ex_folder, "ex06") == 0)
+    {
+        z_C01_ex06();
+    }
+    else if (strcmp(ex_folder, "ex07") == 0)
+    {
+        // Add code for ex07
+    }
+    else if (strcmp(ex_folder, "ex08") == 0)
+    {
+        // Add code for ex08
     }
 }
+
 
 //! NEED testing
 char **get_valid_days_folders(char *exrcices[], int size) /* return only Exrcices from the day folder exmpl:(ex00, ex01, ex02...)*/
