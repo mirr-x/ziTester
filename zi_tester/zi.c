@@ -150,7 +150,7 @@ void zi_TES_C00() /* day : C00 */
     char **curunt_ex_folders = get_valid_days_folders(exrcices, MAX_EX_C00); //@ NEED freeing
     int i = 0;
 
-    // will run an sh file to test this shit
+    
     while (i != MAX_EX_C00)
     {
         if (check_if_ex_folder_exist(exrcices, curunt_ex_folders[i], MAX_EX_C00) == 1)
@@ -171,7 +171,8 @@ void z_C00_ex00()
     /* check if file exist */
     if (access("ft_strlen.c", F_OK) == 0)
     {
-
+        // will run an sh file to test this shit
+        //@ continue here
     }
     else
     {
@@ -200,8 +201,7 @@ void z_test_C00_ex_folder(char *ex_folder)
 }
 
 //! NEED testing
-char **
-get_valid_days_folders(char *exrcices[], int size) /* return only Exrcices from the day folder exmpl:(ex00, ex01, ex02...)*/
+char **get_valid_days_folders(char *exrcices[], int size) /* return only Exrcices from the day folder exmpl:(ex00, ex01, ex02...)*/
 {
     FILE *file_ptr;
     char line[1035];
