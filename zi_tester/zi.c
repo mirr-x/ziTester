@@ -1,8 +1,5 @@
 #include "zi_main.h"
 
-int z_check_IF_folder_exist(char *name);
-void z_print_help();
-
 int main(int ac, char *av[])
 {
     int i;
@@ -11,11 +8,11 @@ int main(int ac, char *av[])
     if (ac == 1)
     {
         /* displaying the help menu */
-        print_help();
+        z_print_help();
     }
     else if (ac == 2)
     {
-        i = check_IF_folder_exist(av[1]);
+        i = z_check_IF_folder_exist(av[1]);
         if (i == -1)
         {
             printf("%s[❌] Folder Not Found%s\n", red, reset);
@@ -62,15 +59,17 @@ void z_check_if_im_in_right_dir(char *folder_nm) /* check if im in the right fol
     char path[1024];
     char *ptr = getcwd(path, sizeof(path));
     char *curnt_folder = z_extract_folder_name(ptr);
+    
 
-    if (folder_nm == curnt_folder)
+    if (strcmp(folder_nm, curnt_folder) == 0)
     {
-        printf("\t\t\t\t\t\t\t\t%s[✔️] Folder %s Found%s\n", green, folder_nm, reset);
+        printf("%s**************************************z> [ 📂 ] CURRENT FOLDER: %s <z**************************************%s\n\n\n", cyan, curnt_folder, reset);
         z_test_day_folder(folder_nm);
+        printf("\n\n%s**************************************z> [ 📂 ] END OF FOLDER: %s <z**************************************%s\n\n\n", cyan, curnt_folder, reset);
     }
     else
     {
-        printf("\t\t\t\t\t\t\t\t%s[❌] Folder %s Not Found%s\n", red, folder_nm, reset);
+        printf("\t\t\t\t%s[ ❌ ] Folder %s Not Found%s\n", red, folder_nm, reset);
         printf("\t\t > %sPLEASE GO TO A VALID FOLDER AND RETRY%s < \n", yellow, reset);
     }
 }
@@ -149,11 +148,13 @@ void zi_TES_C01() /* day : C01 */
     char **curunt_ex_folders = get_valid_days_folders(exrcices, MAX_EX_C00); //@ NEED freeing
     int i = 0;
 
-    while (i != MAX_EX_C00)
+    while (curunt_ex_folders[i] != NULL)
     {
         if (check_if_ex_folder_exist(exrcices, curunt_ex_folders[i], MAX_EX_C00) == 1)
         {
-            printf("\t\t\t%s[✔️] Folder %s Found%s\n", green, curunt_ex_folders[i], reset);
+            printf("\t\t\t%s---------------------------%s\n", purple, reset);
+            printf("\t\t\t%s| [ ✔️ ] Folder %s Found |%s\n", purple, curunt_ex_folders[i], reset);
+            printf("%s--------------------------------------------------------------------------%s\n", purple, reset);
             z_test_C01_ex_folder(curunt_ex_folders[i]);
         }
         else
@@ -162,6 +163,7 @@ void zi_TES_C01() /* day : C01 */
         }
         i++;
     }
+
     i = 0;
     while (curunt_ex_folders[i] != NULL) //@ freeing
     {
@@ -171,7 +173,6 @@ void zi_TES_C01() /* day : C01 */
     free(curunt_ex_folders);
 }
 
-
 void z_C01_ex00()
 {
     /* check if file exist */
@@ -179,11 +180,12 @@ void z_C01_ex00()
     {
         // will run an sh file to test this shit
         //@ cotinnue here
-        int status = system("testing_days_sh/C01/ex00/tes_ft_ft.sh");
+        int status = system("/home/$USER/ZiTester/testing_days_sh/C01/ex00/tes_ft_ft.sh");
     }
     else
     {
         printf("- %s[❌] file 'ft_ft.c' Not Found%s\n", red, reset);
+        printf("%s\n***************************************************************************************************%s",yellow ,reset);
     }
 }
 
@@ -194,7 +196,7 @@ void z_C01_ex01()
     {
         // will run an sh file to test this shit
         //@ cotinnue here
-        int status = system("testing_days_sh/C01/ex01/tes_ft_ultimate_ft.sh");
+        int status = system("/home/$USER/ZiTester/testing_days_sh/C01/ex01/tes_ft_ultimate_ft.sh");
     }
     else
     {
@@ -209,11 +211,12 @@ void z_C01_ex02()
     {
         // will run an sh file to test this shit
         //@ cotinnue here
-        int status = system("testing_days_sh/C01/ex02/tes_ft_swap.sh");
+        int status = system("/home/$USER/ZiTester/testing_days_sh/C01/ex02/tes_ft_swap.sh");
     }
     else
     {
-        printf("- %s[❌] file 'ft_swap.c' Not Found%s\n", red, reset);
+        printf("%s -> ex02/ft_swap.c NF%s\n", red, reset);
+        printf("%s\n***************************************************************************************************%s\n", yellow, reset);
     }
 }
 
@@ -224,7 +227,7 @@ void z_C01_ex03()
     {
         // will run an sh file to test this shit
         //@ cotinnue here
-        int status = system("testing_days_sh/C01/ex03/tes_ft_div_mod.sh");
+        int status = system("/home/$USER/ZiTester/testing_days_sh/C01/ex03/tes_ft_div_mod.sh");
     }
     else
     {
@@ -239,7 +242,7 @@ void z_C01_ex06()
     {
         // will run an sh file to test this shit
         //@ cotinnue here
-        int status = system("testing_days_sh/C01/ex06/tes_ft_strlen.sh");
+        int status = system("/home/$USER/ZiTester/testing_days_sh/C01/ex06/tes_ft_strlen.sh");
     }
     else
     {
@@ -291,7 +294,7 @@ void z_test_C01_ex_folder(char *ex_folder)
 char **get_valid_days_folders(char *exrcices[], int size) /* return only Exrcices from the day folder exmpl:(ex00, ex01, ex02...)*/
 {
     FILE *file_ptr;
-    char line[1035];
+    char line[100];
     char files[100][100];
     int file_count = 0;
     char **valid_ex_dirs;
@@ -299,12 +302,25 @@ char **get_valid_days_folders(char *exrcices[], int size) /* return only Exrcice
     char *ptr;
 
     file_ptr = popen("ls", "r");
+    if (file_ptr == NULL)
+    {
+        perror("popen failed");
+        exit(1);
+    }
 
     while (fgets(line, sizeof(line) - 1, file_ptr) != NULL)
     {
         line[strcspn(line, "\n")] = '\0'; /* rmv '\n */
-        strcpy(files[file_count], line);
-        file_count++;
+        if (file_count <= MAX_FILES)
+        {
+            strcpy(files[file_count], line);
+            file_count++;
+        }
+        else
+        {
+            fprintf(stderr, "Warning: too many files, increase MAX_FILES\n");
+            break;
+        }
     }
 
     /* close file */

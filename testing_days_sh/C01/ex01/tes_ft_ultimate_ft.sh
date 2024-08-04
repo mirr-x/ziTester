@@ -31,20 +31,20 @@ status=0
 if [ $size_diff_output -eq 0 ]
 then
     status=1
-    echo -e "${YELLOW}***************************************************************************************************${RESET}"
     echo -e "${GREEN} -> $path_file OK ${RESET}"
 else
     status=-1
-    echo -e "${YELLOW}***************************************************************************************************${RESET}"
-    echo -e "${RED} -> $path_file KO ${RESET}"
+    echo -e "${RED}\n -> $path_file KO ${RESET}"
+    echo -e "${RED}\n\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX${RESET}"
     echo -e "${RED}\n\t\t !! HERE IS THE DIFF OUTPUT !! ${RESET}"
     echo -e "${PURPLE}\n\t\t\t > YOUR_OUTPUT${RESET}"
     cat $path_user_output
     echo -e "${PURPLE}\n\t\t\t < EXPECTED_OUTPUT${RESET}"
     cat $path_expected_output
+    echo -e "${RED}\n\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX${RESET}"
 fi
 
-echo -e "${YELLOW}***************************************************************************************************${RESET}"
+echo -e "${YELLOW}\n***************************************************************************************************${RESET}"
 # clean the mess
 rm $path_exe $path_user_output $path_diff_output
 

@@ -10,5 +10,8 @@
       "color": "foldercolorizer.OrangeRed",
       "badge": "SH"
     }
-  ]
+  ],
+  "files.associations": {
+    "string.h": "c"
+  }
 }
