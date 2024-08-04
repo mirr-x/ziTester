@@ -57,7 +57,7 @@ void z_print_help()
            "    ziteste C05\n");
 }
 
-void z_check_if_im_in_right_dir(char *folder_nm)  /* check if im in the right folder that user want to test and then >> go and test the folder */
+void z_check_if_im_in_right_dir(char *folder_nm) /* check if im in the right folder that user want to test and then >> go and test the folder */
 {
     char path[1024];
     char *ptr = getcwd(path, sizeof(path));
@@ -141,7 +141,6 @@ void z_test_day_folder(char *folder_nm)
     else if (strcmp(folder_nm, "C10") == 0)
     {
     }
-
 }
 
 void zi_TES_C01() /* day : C01 */
@@ -150,7 +149,6 @@ void zi_TES_C01() /* day : C01 */
     char **curunt_ex_folders = get_valid_days_folders(exrcices, MAX_EX_C00); //@ NEED freeing
     int i = 0;
 
-    
     while (i != MAX_EX_C00)
     {
         if (check_if_ex_folder_exist(exrcices, curunt_ex_folders[i], MAX_EX_C00) == 1)
@@ -171,39 +169,101 @@ void zi_TES_C01() /* day : C01 */
         i++;
     }
     free(curunt_ex_folders);
-    
+}
+
+
+void z_C01_ex00()
+{
+    /* check if file exist */
+    if (access("ex00/ft_ft.c", F_OK) == 0)
+    {
+        // will run an sh file to test this shit
+        //@ cotinnue here
+        int status = system("testing_days_sh/C01/ex00/tes_ft_ft.sh");
+    }
+    else
+    {
+        printf("- %s[❌] file 'ft_ft.c' Not Found%s\n", red, reset);
+    }
+}
+
+void z_C01_ex01()
+{
+    /* check if file exist */
+    if (access("ex01/ft_ultimate_ft.c", F_OK) == 0)
+    {
+        // will run an sh file to test this shit
+        //@ cotinnue here
+        int status = system("testing_days_sh/C01/ex01/tes_ft_ultimate_ft.sh");
+    }
+    else
+    {
+        printf("- %s[❌] file 'ft_ultimate_ft.c' Not Found%s\n", red, reset);
+    }
+}
+
+void z_C01_ex02()
+{
+    /* check if file exist */
+    if (access("ex02/ft_swap.c", F_OK) == 0)
+    {
+        // will run an sh file to test this shit
+        //@ cotinnue here
+        int status = system("testing_days_sh/C01/ex02/tes_ft_swap.sh");
+    }
+    else
+    {
+        printf("- %s[❌] file 'ft_swap.c' Not Found%s\n", red, reset);
+    }
+}
+
+void z_C01_ex03()
+{
+    /* check if file exist */
+    if (access("ex03/ft_div_mod.c", F_OK) == 0)
+    {
+        // will run an sh file to test this shit
+        //@ cotinnue here
+        int status = system("testing_days_sh/C01/ex03/tes_ft_div_mod.sh");
+    }
+    else
+    {
+        printf("- %s[❌] file 'ft_div_mod.c' Not Found%s\n", red, reset);
+    }
 }
 
 void z_C01_ex06()
 {
     /* check if file exist */
-    if (access("ft_strlen.c", F_OK) == 0)
+    if (access("ex06/ft_strlen.c", F_OK) == 0)
     {
         // will run an sh file to test this shit
         //@ cotinnue here
+        int status = system("testing_days_sh/C01/ex06/tes_ft_strlen.sh");
     }
     else
     {
-        printf("- %s[❌] file 'ft_putchar.c' Not Found%s\n", red, reset);
+        printf("- %s[❌] file 'ft_strlen.c' Not Found%s\n", red, reset);
     }
 }
+
 void z_test_C01_ex_folder(char *ex_folder)
 {
     if (strcmp(ex_folder, "ex00") == 0)
     {
-        // Add code for ex00
+        z_C01_ex00();
     }
     else if (strcmp(ex_folder, "ex01") == 0)
     {
-        // Add code for ex01
+        z_C01_ex01();
     }
     else if (strcmp(ex_folder, "ex02") == 0)
     {
-        // Add code for ex02
+        z_C01_ex02();
     }
     else if (strcmp(ex_folder, "ex03") == 0)
     {
-        // Add code for ex03
+        z_C01_ex03();
     }
     else if (strcmp(ex_folder, "ex04") == 0)
     {
@@ -226,7 +286,6 @@ void z_test_C01_ex_folder(char *ex_folder)
         // Add code for ex08
     }
 }
-
 
 //! NEED testing
 char **get_valid_days_folders(char *exrcices[], int size) /* return only Exrcices from the day folder exmpl:(ex00, ex01, ex02...)*/
