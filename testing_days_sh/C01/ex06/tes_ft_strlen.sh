@@ -44,7 +44,12 @@ else
     echo -e "${RED}\n\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX${RESET}"
 fi
 
-echo -e "${YELLOW}\n***************************************************************************************************${RESET}"
+if [ $status -eq 1 ]
+then
+    echo -e "${YELLOW}\n******************************************************************************************${RESET} ${GREEN}  OK  { ✔️  } ${RESET}"
+else
+    echo -e "${YELLOW}\n******************************************************************************************${RESET} ${RED}  KO { ❌  } ${RESET}"
+fi
 
 # clean the mess if it exists
 if [ -f $path_exe ]; then
