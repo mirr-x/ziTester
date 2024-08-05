@@ -184,8 +184,8 @@ void z_C01_ex00()
     }
     else
     {
-        printf("- %s[❌] file 'ft_ft.c' Not Found%s\n", red, reset);
-        printf("%s\n***************************************************************************************************%s",yellow ,reset);
+        printf("%s -> ex02/ft_swap.c NF%s\n", red, reset);
+        printf("%s\n***************************************************************************************************%s\n", yellow, reset);
     }
 }
 
@@ -200,7 +200,8 @@ void z_C01_ex01()
     }
     else
     {
-        printf("- %s[❌] file 'ft_ultimate_ft.c' Not Found%s\n", red, reset);
+        printf("%s -> ex02/ft_swap.c NF%s\n", red, reset);
+        printf("%s\n***************************************************************************************************%s\n", yellow, reset);
     }
 }
 
@@ -231,7 +232,8 @@ void z_C01_ex03()
     }
     else
     {
-        printf("- %s[❌] file 'ft_div_mod.c' Not Found%s\n", red, reset);
+        printf("%s -> ex02/ft_swap.c NF%s\n", red, reset);
+        printf("%s\n***************************************************************************************************%s\n", yellow, reset);
     }
 }
 
@@ -246,7 +248,8 @@ void z_C01_ex06()
     }
     else
     {
-        printf("- %s[❌] file 'ft_strlen.c' Not Found%s\n", red, reset);
+        printf("%s -> ex02/ft_swap.c NF%s\n", red, reset);
+        printf("%s\n***************************************************************************************************%s\n", yellow, reset);
     }
 }
 
