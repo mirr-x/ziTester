@@ -45,7 +45,18 @@ else
 fi
 
 echo -e "${YELLOW}\n***************************************************************************************************${RESET}"
-# clean the mess
-rm $path_exe $path_user_output $path_diff_output
+
+# clean the mess if it exists
+if [ -f $path_exe ]; then
+    rm $path_exe
+fi
+
+if [ -f $path_user_output ]; then
+    rm $path_user_output
+fi
+
+if [ -f $path_diff_output ]; then
+    rm $path_diff_output
+fi
 
 exit $status
