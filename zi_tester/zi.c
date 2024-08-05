@@ -12,14 +12,14 @@ int main(int ac, char *av[])
     }
     else if (ac == 2)
     {
-        i = z_check_IF_folder_exist(av[1]);
+        folder_nm = av[1];
+        i = z_check_IF_folder_exist(folder_nm);
         if (i == -1)
         {
             printf("%s[❌] Folder Not Found%s\n", red, reset);
         }
         else if (i == 1)
         {
-            folder_nm = av[1];
             z_check_if_im_in_right_dir(folder_nm);
         }
     }
@@ -62,7 +62,6 @@ void z_check_if_im_in_right_dir(char *folder_nm) /* check if im in the right fol
     char path[1024];
     char *ptr = getcwd(path, sizeof(path));
     char *curnt_folder = z_extract_folder_name(ptr);
-    status_ex_dir *status_exr;
 
     
 
@@ -71,7 +70,7 @@ void z_check_if_im_in_right_dir(char *folder_nm) /* check if im in the right fol
         printf("%s╔══════════════════════════════════════════════════════════════════════════╗\n", cyan);
         printf("║                       📂 CURRENT FOLDER: %s                             ║\n", curnt_folder);
         printf("╚══════════════════════════════════════════════════════════════════════════╝%s\n\n", reset);
-        z_test_day_folder(folder_nm, status_exr);
+        z_test_day_folder(folder_nm);
         printf("\n\n%s╔══════════════════════════════════════════════════════════════════════════╗\n", cyan);
         printf("║                       📂 END OF FOLDER: %s                              ║\n", curnt_folder);
         printf("╚══════════════════════════════════════════════════════════════════════════╝%s\n\n", reset);
@@ -113,14 +112,14 @@ char *z_extract_folder_name(char *path)
     return (folder_name);
 }
 
-void z_test_day_folder(char *folder_nm, status_ex_dir *status_exr)
+void z_test_day_folder(char *folder_nm)
 {
     if (strcmp(folder_nm, "C00") == 0)
     {
     }
     else if (strcmp(folder_nm, "C01") == 0)
     {
-        zi_TES_C01(status_exr);
+        zi_TES_C01();
     }
     else if (strcmp(folder_nm, "C02") == 0)
     {
@@ -151,21 +150,26 @@ void z_test_day_folder(char *folder_nm, status_ex_dir *status_exr)
     }
 }
 
-void zi_TES_C01(status_ex_dir *status_exr) /* day : C01 */
+void zi_TES_C01() /* day : C01 */
 {
     char *exrcices[] = {"ex00", "ex01", "ex02", "ex03", "ex04", "ex05", "ex06", "ex07", "ex08"};
     char **curunt_ex_folders = get_valid_days_folders(exrcices, MAX_EX_C00); //@ NEED freeing
+    /* dislay curunt ex folders*/
+
     int i = 0;
-    int len_ex_folders = z_len_2dArray(curunt_ex_folders);
-    status_exr = malloc((sizeof(status_ex_dir) * (len_ex_folders + 1)));
+    int len_ex_folders = 0;
+    while (curunt_ex_folders[len_ex_folders] != NULL)
+    {
+        len_ex_folders++;
+    }
+    status_ex_dir *status_exr = malloc((sizeof(status_ex_dir) * (len_ex_folders + 1)));
     if (status_exr == NULL)
     {
         perror("malloc failed");
         exit(EXIT_FAILURE);
     }
     int pos = 0;
-//@ im hereeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-
+    //@ im hereeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
     while (curunt_ex_folders[i] != NULL)
     {
         if (check_if_ex_folder_exist(exrcices, curunt_ex_folders[i], MAX_EX_C00) == 1)
@@ -183,7 +187,6 @@ void zi_TES_C01(status_ex_dir *status_exr) /* day : C01 */
     }
     status_exr[pos].ex_folder = NULL;
     status_exr[pos].status = NULL;
-    printf(">>>> %d <<<<<\n", pos);
     z_display_Summary_Rusults(status_exr);
 
     i = 0;
@@ -195,7 +198,7 @@ void zi_TES_C01(status_ex_dir *status_exr) /* day : C01 */
     free(curunt_ex_folders);
 }
 
-void z_C01_ex00(status_ex_dir *status_exr ,int **pos_ptr)
+void z_C01_ex00(status_ex_dir *status_exr ,int *pos_ptr)
 {
     /* check if file exist */
     if (access("ex00/ft_ft.c", F_OK) == 0)
@@ -203,30 +206,31 @@ void z_C01_ex00(status_ex_dir *status_exr ,int **pos_ptr)
         // will run an sh file to test this shit
         //@ cotinnue here
         int status = system("/home/$USER/ZiTester/testing_days_sh/C01/ex00/tes_ft_ft.sh");
-        if (status == 1)
+        int exit_status = WEXITSTATUS(status);
+        if (exit_status == 1)
         {
-            status_exr[**pos_ptr].ex_folder = "ex00/ft_ft.c";
-            status_exr[**pos_ptr].status = "✅  Passed";
-            (**pos_ptr)++;
+            status_exr[*pos_ptr].ex_folder = "ex00/ft_ft.c";
+            status_exr[*pos_ptr].status = "✅  Passed";
+            (*pos_ptr)++;
         }
-        else if (status == -1)
+        else if (exit_status == -1)
         {
-            status_exr[**pos_ptr].ex_folder = "ex00/ft_ft.c";
-            status_exr[**pos_ptr].status = "❌  Not Passed";
-            (**pos_ptr)++;
+            status_exr[*pos_ptr].ex_folder = "ex00/ft_ft.c";
+            status_exr[*pos_ptr].status = "❌  Not Passed";
+            (*pos_ptr)++;
         }
     }
     else
     {
         printf("%s -> ex00/ft_ft.c NF%s\n", red, reset);
         printf("%s\n******************************************************************************************%s %s  KO  { ❌  } %s\n", yellow, reset, red, reset);
-        status_exr[**pos_ptr].ex_folder = "ex00/ft_ft.c";
-        status_exr[**pos_ptr].status = "❌  file Not Found";
+        status_exr[*pos_ptr].ex_folder = "ex00/ft_ft.c";
+        status_exr[*pos_ptr].status = "❌  file Not Found";
         (*pos_ptr)++;
     }
 }
 
-void z_C01_ex01(status_ex_dir *status_exr, int **pos_ptr)
+void z_C01_ex01(status_ex_dir *status_exr, int *pos_ptr)
 {
     /* check if file exist */
     if (access("ex01/ft_ultimate_ft.c", F_OK) == 0)
@@ -234,13 +238,14 @@ void z_C01_ex01(status_ex_dir *status_exr, int **pos_ptr)
         // will run an sh file to test this shit
         //@ cotinnue here
         int status = system("/home/$USER/ZiTester/testing_days_sh/C01/ex01/tes_ft_ultimate_ft.sh");
-        if (status == 1)
+        int exit_status = WEXITSTATUS(status);
+        if (exit_status == 1)
         {
             status_exr[*pos_ptr].ex_folder = "ex01/ft_ultimate_ft.c";
             status_exr[*pos_ptr].status = "✅  Passed";
             (*pos_ptr)++;
         }
-        else if (status == -1)
+        else if (exit_status == -1)
         {
             status_exr[*pos_ptr].ex_folder = "ex01/ft_ultimate_ft.c";
             status_exr[*pos_ptr].status = "❌  Not Passed";
@@ -265,13 +270,14 @@ void z_C01_ex02(status_ex_dir *status_exr, int *pos_ptr)
         // will run an sh file to test this shit
         //@ cotinnue here
         int status = system("/home/$USER/ZiTester/testing_days_sh/C01/ex02/tes_ft_swap.sh");
-        if (status == 1)
+        int exit_status = WEXITSTATUS(status);
+        if (exit_status == 1)
         {
             status_exr[*pos_ptr].ex_folder = "ex02/ft_swap.c";
             status_exr[*pos_ptr].status = "✅  Passed";
             (*pos_ptr)++;
         }
-        else if (status == -1)
+        else if (exit_status == -1)
         {
             status_exr[*pos_ptr].ex_folder = "ex02/ft_swap.c";
             status_exr[*pos_ptr].status = "❌  Not Passed";
@@ -296,13 +302,14 @@ void z_C01_ex03(status_ex_dir *status_exr, int *pos_ptr)
         // will run an sh file to test this shit
         //@ cotinnue here
         int status = system("/home/$USER/ZiTester/testing_days_sh/C01/ex03/tes_ft_div_mod.sh");
-        if (status == 1)
+        int exit_status = WEXITSTATUS(status);
+        if (exit_status == 1)
         {
             status_exr[*pos_ptr].ex_folder = "ex03/ft_div_mod.c";
             status_exr[*pos_ptr].status = "✅  Passed";
             (*pos_ptr)++;
         }
-        else if (status == -1)
+        else if (exit_status == -1)
         {
             status_exr[*pos_ptr].ex_folder = "ex03/ft_div_mod.c";
             status_exr[*pos_ptr].status = "❌  Not Passed";
@@ -327,13 +334,14 @@ void z_C01_ex06(status_ex_dir *status_exr, int *pos_ptr)
         // will run an sh file to test this shit
         //@ cotinnue here
         int status = system("/home/$USER/ZiTester/testing_days_sh/C01/ex06/tes_ft_strlen.sh");
-        if (status == 1)
+        int exit_status = WEXITSTATUS(status);
+        if (exit_status == 1)
         {
             status_exr[*pos_ptr].ex_folder = "ex06/ft_strlen.c";
             status_exr[*pos_ptr].status = "✅  Passed";
             (*pos_ptr)++;
         }
-        else if (status == -1)
+        else if (exit_status == -1)
         {
             status_exr[*pos_ptr].ex_folder = "ex06/ft_strlen.c";
             status_exr[*pos_ptr].status = "❌  Not Passed";
@@ -354,19 +362,19 @@ void z_test_C01_ex_folder(char *ex_folder, status_ex_dir *status_exr, int *pos_p
 {
     if (strcmp(ex_folder, "ex00") == 0)
     {
-        z_C01_ex00(status_exr, &pos_ptr);
+        z_C01_ex00(status_exr, pos_ptr);
     }
     else if (strcmp(ex_folder, "ex01") == 0)
     {
-        z_C01_ex01(status_exr, &pos_ptr);
+        z_C01_ex01(status_exr, pos_ptr);
     }
     else if (strcmp(ex_folder, "ex02") == 0)
     {
-        z_C01_ex02(status_exr, &pos_ptr);
+        z_C01_ex02(status_exr, pos_ptr);
     }
     else if (strcmp(ex_folder, "ex03") == 0)
     {
-        z_C01_ex03(status_exr, &pos_ptr);
+        z_C01_ex03(status_exr, pos_ptr);
     }
     else if (strcmp(ex_folder, "ex04") == 0)
     {
@@ -378,7 +386,7 @@ void z_test_C01_ex_folder(char *ex_folder, status_ex_dir *status_exr, int *pos_p
     }
     else if (strcmp(ex_folder, "ex06") == 0)
     {
-        z_C01_ex06(status_exr, &pos_ptr);
+        z_C01_ex06(status_exr, pos_ptr);
     }
     else if (strcmp(ex_folder, "ex07") == 0)
     {
@@ -462,14 +470,14 @@ void z_display_Summary_Rusults(status_ex_dir *status_exr)
     int i = 0;
     int j = 0;
 
-    printf("\n\t\t\t%s[ 📊 ] SUMMARY RESULTS%s\n", underline, reset);
-    printf("\t\t\t%s───────────────────────────────────────────────────────────────────────────%s\n", purple, reset);
-    while (status_exr->ex_folder != NULL && status_exr->status != NULL)
+    printf("\n\t\t\t%s[ 📊 ] SUMMARY RESULTS%s\n", orange, reset);
+    printf("%sx────────────────────────────────────────────────────────────x%s\n", purple, reset);
+    while (status_exr[i].ex_folder != NULL && status_exr[i].status != NULL)
     {
-        printf("%s: %s\n", status_exr->ex_folder, status_exr->status);
+        printf("%-30s : %-28s %s|%s\n", status_exr[i].ex_folder, status_exr[i].status, purple, reset);
         i++;
     }
-    printf("\t\t\t%s───────────────────────────────────────────────────────────────────────────%s\n", purple, reset);
+    printf("%sx────────────────────────────────────────────────────────────x%s\n", purple, reset);
 
     free(status_exr);
 }
@@ -477,10 +485,11 @@ void z_display_Summary_Rusults(status_ex_dir *status_exr)
 int z_len_2dArray(char *arr2d[])
 {
     int i = 0;
+
     while (arr2d[i] != NULL)
     {
         i++;
     }
+
     return (i);
 }
-

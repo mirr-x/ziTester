@@ -17,19 +17,19 @@ typedef struct status_ex_dir
 
 /* Functions -------------------------------------------------*/
 void z_display_Summary_Rusults(status_ex_dir *status_exr);
-int z_len_2dArray(char *arr2d[]);
+int z_len_2dArray(char **arr2d);
 int z_check_IF_folder_exist(char *name);
 void z_print_help();
 void z_check_if_im_in_right_dir(char *folder_nm);
 int z_len_slash(char *str);
 char *z_extract_folder_name(char *path);
-void z_test_day_folder(char *folder_nm, status_ex_dir *status_exr);
+void z_test_day_folder(char *folder_nm);
 char **get_valid_days_folders(char *exrcices[], int size);
 int check_if_ex_folder_exist(char *exrcices[], char *ex_folder, int size);
 
 /* Day 01 Functions ------------------------------------------*/
 void z_test_C01_ex_folder(char *ex_folder, status_ex_dir *status_exr, int *pos_ptr);
-void zi_TES_C01(status_ex_dir *status_exr);
+void zi_TES_C01(); /* here we creat malloc od strructs */
 void z_C01_ex00(status_ex_dir *status_exr, int *pos_ptr);
 void z_C01_ex01(status_ex_dir *status_exr, int *pos_ptr);
 void z_C01_ex02(status_ex_dir *status_exr, int *pos_ptr);
