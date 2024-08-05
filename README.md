@@ -4,7 +4,6 @@
 
 - Checks if exercise folders exist.
 - Prints status messages for found and not found folders.
-- Frees allocated memory for folder names.
 
 ### Status Table
 
