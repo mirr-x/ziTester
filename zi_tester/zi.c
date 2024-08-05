@@ -210,13 +210,13 @@ void z_C01_ex00(status_ex_dir *status_exr ,int *pos_ptr)
         if (exit_status == 1)
         {
             status_exr[*pos_ptr].ex_folder = "ex00/ft_ft.c";
-            status_exr[*pos_ptr].status = "✅  Passed";
+            status_exr[*pos_ptr].status = "✅  \033[32mPassed\033[0m";
             (*pos_ptr)++;
         }
-        else if (exit_status == -1)
+        else
         {
             status_exr[*pos_ptr].ex_folder = "ex00/ft_ft.c";
-            status_exr[*pos_ptr].status = "❌  Not Passed";
+            status_exr[*pos_ptr].status = "❌ \033[31mNot Passed\033[0m";
             (*pos_ptr)++;
         }
     }
@@ -225,7 +225,7 @@ void z_C01_ex00(status_ex_dir *status_exr ,int *pos_ptr)
         printf("%s -> ex00/ft_ft.c NF%s\n", red, reset);
         printf("%s\n******************************************************************************************%s %s  KO  { ❌  } %s\n", yellow, reset, red, reset);
         status_exr[*pos_ptr].ex_folder = "ex00/ft_ft.c";
-        status_exr[*pos_ptr].status = "❌  file Not Found";
+        status_exr[*pos_ptr].status = "⚠️  \033[33mfile Not Found\033[0m";
         (*pos_ptr)++;
     }
 }
@@ -242,13 +242,13 @@ void z_C01_ex01(status_ex_dir *status_exr, int *pos_ptr)
         if (exit_status == 1)
         {
             status_exr[*pos_ptr].ex_folder = "ex01/ft_ultimate_ft.c";
-            status_exr[*pos_ptr].status = "✅  Passed";
+            status_exr[*pos_ptr].status = "✅  \033[32mPassed\033[0m";
             (*pos_ptr)++;
         }
-        else if (exit_status == -1)
+        else
         {
             status_exr[*pos_ptr].ex_folder = "ex01/ft_ultimate_ft.c";
-            status_exr[*pos_ptr].status = "❌  Not Passed";
+            status_exr[*pos_ptr].status = "❌ \033[31mNot Passed\033[0m";
             (*pos_ptr)++;
         }
     }
@@ -257,7 +257,7 @@ void z_C01_ex01(status_ex_dir *status_exr, int *pos_ptr)
         printf("%s -> ex01/ft_ultimate_ft.c NF%s\n", red, reset);
         printf("%s\n******************************************************************************************%s %s  KO  { ❌  } %s\n", yellow, reset, red, reset);
         status_exr[*pos_ptr].ex_folder = "ex01/ft_ultimate_ft.c";
-        status_exr[*pos_ptr].status = "❌  file Not Found";
+        status_exr[*pos_ptr].status = "⚠️  \033[33mfile Not Found\033[0m";
         (*pos_ptr)++;
     }
 }
@@ -274,13 +274,13 @@ void z_C01_ex02(status_ex_dir *status_exr, int *pos_ptr)
         if (exit_status == 1)
         {
             status_exr[*pos_ptr].ex_folder = "ex02/ft_swap.c";
-            status_exr[*pos_ptr].status = "✅  Passed";
+            status_exr[*pos_ptr].status = "✅  \033[32mPassed\033[0m";
             (*pos_ptr)++;
         }
-        else if (exit_status == -1)
+        else
         {
             status_exr[*pos_ptr].ex_folder = "ex02/ft_swap.c";
-            status_exr[*pos_ptr].status = "❌  Not Passed";
+            status_exr[*pos_ptr].status = "❌ \033[31mNot Passed\033[0m";
             (*pos_ptr)++;
         }
     }
@@ -289,7 +289,7 @@ void z_C01_ex02(status_ex_dir *status_exr, int *pos_ptr)
         printf("%s -> ex02/ft_swap.c NF%s\n", red, reset);
         printf("%s\n******************************************************************************************%s %s  KO  { ❌  } %s\n", yellow, reset, red, reset);
         status_exr[*pos_ptr].ex_folder = "ex02/ft_swap.c";
-        status_exr[*pos_ptr].status = "❌  file Not Found";
+        status_exr[*pos_ptr].status = "⚠️  \033[33mfile Not Found\033[0m";
         (*pos_ptr)++;
     }
 }
@@ -306,13 +306,13 @@ void z_C01_ex03(status_ex_dir *status_exr, int *pos_ptr)
         if (exit_status == 1)
         {
             status_exr[*pos_ptr].ex_folder = "ex03/ft_div_mod.c";
-            status_exr[*pos_ptr].status = "✅  Passed";
+            status_exr[*pos_ptr].status = "✅  \033[32mPassed\033[0m";
             (*pos_ptr)++;
         }
-        else if (exit_status == -1)
+        else
         {
             status_exr[*pos_ptr].ex_folder = "ex03/ft_div_mod.c";
-            status_exr[*pos_ptr].status = "❌  Not Passed";
+            status_exr[*pos_ptr].status = "❌ \033[31mNot Passed\033[0m";
             (*pos_ptr)++;
         }
     }
@@ -321,7 +321,7 @@ void z_C01_ex03(status_ex_dir *status_exr, int *pos_ptr)
         printf("%s -> ex03/ft_div_mod.c NF%s\n", red, reset);
         printf("%s\n******************************************************************************************%s %s  KO  { ❌  } %s\n", yellow, reset, red, reset);
         status_exr[*pos_ptr].ex_folder = "ex03/ft_div_mod.c";
-        status_exr[*pos_ptr].status = "❌  file Not Found";
+        status_exr[*pos_ptr].status = "⚠️  \033[33mfile Not Found\033[0m";
         (*pos_ptr)++;
     }
 }
@@ -338,13 +338,13 @@ void z_C01_ex06(status_ex_dir *status_exr, int *pos_ptr)
         if (exit_status == 1)
         {
             status_exr[*pos_ptr].ex_folder = "ex06/ft_strlen.c";
-            status_exr[*pos_ptr].status = "✅  Passed";
+            status_exr[*pos_ptr].status = "✅  \033[32mPassed\033[0m";
             (*pos_ptr)++;
         }
-        else if (exit_status == -1)
+        else
         {
             status_exr[*pos_ptr].ex_folder = "ex06/ft_strlen.c";
-            status_exr[*pos_ptr].status = "❌  Not Passed";
+            status_exr[*pos_ptr].status = "❌ \033[31mNot Passed\033[0m";
             (*pos_ptr)++;
         }
     }
@@ -353,7 +353,7 @@ void z_C01_ex06(status_ex_dir *status_exr, int *pos_ptr)
         printf("%s -> ex06/ft_strlen.c NF%s\n", red, reset);
         printf("%s\n******************************************************************************************%s %s  KO  { ❌  } %s\n", yellow, reset, red, reset);
         status_exr[*pos_ptr].ex_folder = "ex06/ft_strlen.c";
-        status_exr[*pos_ptr].status = "❌  file Not Found";
+        status_exr[*pos_ptr].status = "⚠️  \033[33mfile Not Found\033[0m";
         (*pos_ptr)++;
     }
 }
@@ -470,11 +470,11 @@ void z_display_Summary_Rusults(status_ex_dir *status_exr)
     int i = 0;
     int j = 0;
 
-    printf("\n\t\t\t%s[ 📊 ] SUMMARY RESULTS%s\n", orange, reset);
+    printf("\n\t\t%s[ 📊 ] SUMMARY RESULTS%s\n", pink, reset);
     printf("%sx────────────────────────────────────────────────────────────x%s\n", purple, reset);
     while (status_exr[i].ex_folder != NULL && status_exr[i].status != NULL)
     {
-        printf("%-30s : %-28s %s|%s\n", status_exr[i].ex_folder, status_exr[i].status, purple, reset);
+        printf("%-30s :\t %s \n", status_exr[i].ex_folder, status_exr[i].status);
         i++;
     }
     printf("%sx────────────────────────────────────────────────────────────x%s\n", purple, reset);

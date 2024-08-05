@@ -60,9 +60,12 @@ const char *orange = "\033[0;33m";
 const char *bold = "\033[1m";
 /* Color : underline */
 const char *underline = "\033[4m";
+/* color : pink */
+const char *pink = "\033[95m";
 /* Color : highlight */
 const char *highlight = "\033[7m";
 /* Reset color */
 const char *reset = "\033[0m";
+
 
 #endif // ZI_MAIN_H
