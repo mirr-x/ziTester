@@ -157,7 +157,7 @@ void zi_TES_C01() /* day : C01 */
     /* dislay curunt ex folders*/
 
     int i = 0;
-    int len_ex_folders = 0;
+    int len_ex_folders = 0; 
     while (curunt_ex_folders[len_ex_folders] != NULL)
     {
         len_ex_folders++;
@@ -205,7 +205,7 @@ void z_C01_ex00(status_ex_dir *status_exr ,int *pos_ptr)
     {
         // will run an sh file to test this shit
         //@ cotinnue here
-        int status = system("/home/$USER/ZiTester/testing_days_sh/C01/ex00/tes_ft_ft.sh");
+        int status = system("/home/$USER/ziTester/testing_days_sh/C01/ex00/tes_ft_ft.sh");
         int exit_status = WEXITSTATUS(status);
         if (exit_status == 1)
         {
@@ -237,7 +237,7 @@ void z_C01_ex01(status_ex_dir *status_exr, int *pos_ptr)
     {
         // will run an sh file to test this shit
         //@ cotinnue here
-        int status = system("/home/$USER/ZiTester/testing_days_sh/C01/ex01/tes_ft_ultimate_ft.sh");
+        int status = system("/home/$USER/ziTester/testing_days_sh/C01/ex01/tes_ft_ultimate_ft.sh");
         int exit_status = WEXITSTATUS(status);
         if (exit_status == 1)
         {
@@ -269,7 +269,7 @@ void z_C01_ex02(status_ex_dir *status_exr, int *pos_ptr)
     {
         // will run an sh file to test this shit
         //@ cotinnue here
-        int status = system("/home/$USER/ZiTester/testing_days_sh/C01/ex02/tes_ft_swap.sh");
+        int status = system("/home/$USER/ziTester/testing_days_sh/C01/ex02/tes_ft_swap.sh");
         int exit_status = WEXITSTATUS(status);
         if (exit_status == 1)
         {
@@ -301,7 +301,7 @@ void z_C01_ex03(status_ex_dir *status_exr, int *pos_ptr)
     {
         // will run an sh file to test this shit
         //@ cotinnue here
-        int status = system("/home/$USER/ZiTester/testing_days_sh/C01/ex03/tes_ft_div_mod.sh");
+        int status = system("/home/$USER/ziTester/testing_days_sh/C01/ex03/tes_ft_div_mod.sh");
         int exit_status = WEXITSTATUS(status);
         if (exit_status == 1)
         {
@@ -333,7 +333,7 @@ void z_C01_ex06(status_ex_dir *status_exr, int *pos_ptr)
     {
         // will run an sh file to test this shit
         //@ cotinnue here
-        int status = system("/home/$USER/ZiTester/testing_days_sh/C01/ex06/tes_ft_strlen.sh");
+        int status = system("/home/$USER/ziTester/testing_days_sh/C01/ex06/tes_ft_strlen.sh");
         int exit_status = WEXITSTATUS(status);
         if (exit_status == 1)
         {
