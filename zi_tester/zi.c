@@ -200,6 +200,37 @@ void zi_TES_C01() /* day : C01 */
 
 void z_C01_ex00(status_ex_dir *status_exr ,int *pos_ptr)
 {
+
+    // bhadi ghancheckiw ch7al  mn  file --------------------------------------------
+        DIR *dir = opendir("ex00");
+        if (dir)
+        {
+            int file_count = 0;
+            struct dirent *entry;
+            struct stat file_stat;
+            char filepath[512]; // Buffer to hold the file path
+
+            while ((entry = readdir(dir)) != NULL)
+            {
+                snprintf(filepath, sizeof(filepath), "ex00/%s", entry->d_name);
+                if (stat(filepath, &file_stat) == 0)
+                {
+                    if (S_ISREG(file_stat.st_mode))
+                    {
+                        file_count++;
+                    }
+                }
+            }
+            closedir(dir);
+
+            if (file_count > 1)
+            {
+                printf("Warning: There is more than 1 file in the ex00 directory\n");
+            }
+        }
+        //--------------------------------------------------------------------------------------
+
+    
     /* check if file exist */
     if (access("ex00/ft_ft.c", F_OK) == 0)
     {
