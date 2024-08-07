@@ -84,4 +84,7 @@ if [ -f $path_diff_output ]; then
     rm $path_diff_output
 fi
 
+if [ -f $path_norm_output ]; then
+    rm $path_norm_output
+fi
 exit $status
