@@ -6,6 +6,7 @@ path_file=ex00/ft_ft.c
 path_expected_output=/home/$USER/ziTester/main-files_days/C01/ex00/expected_output
 path_user_output=/home/$USER/ziTester/main-files_days/C01/ex00/user_output
 path_diff_output=/home/$USER/ziTester/main-files_days/C01/ex00/diff_output
+path_norm_output=/home/$USER/ziTester/main-files_days/C01/ex00/norm_output
 
 # colors
 GREEN='\033[32m'
@@ -13,6 +14,25 @@ RED='\033[31m'
 YELLOW='\033[33m'
 RESET='\033[0m'
 PURPLE='\033[35m'
+
+#check normin
+norminette $path_file > $path_norm_output
+
+size_norm_output=$(stat -c%s $path_norm_output)
+
+if [ $size_norm_output -eq 18 ]
+then
+    echo -e "${GREEN} -> NORMINETTE OK ${RESET}"
+else
+    echo -e "${RED}\n\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX${RESET}"
+    echo -e "${RED}\n\t\t !! HERE IS THE NORM OUTPUT !! \n${RESET}"
+
+    cat $path_norm_output
+
+    echo -e "${RED}\n\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX${RESET}"
+fi
+
+
 
 # run the code and compile it with the main file
 gcc -Wall -Wextra -Werror $path_main $path_file -o $path_exe
