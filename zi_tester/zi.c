@@ -157,7 +157,7 @@ void zi_TES_C01() /* day : C01 */
     /* dislay curunt ex folders*/
 
     int i = 0;
-    int len_ex_folders = 0;
+    int len_ex_folders = 0; 
     while (curunt_ex_folders[len_ex_folders] != NULL)
     {
         len_ex_folders++;
