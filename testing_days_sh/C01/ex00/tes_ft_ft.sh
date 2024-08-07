@@ -14,6 +14,9 @@ YELLOW='\033[33m'
 RESET='\033[0m'
 PURPLE='\033[35m'
 
+#check normin
+norminette @path_file
+
 # run the code and compile it with the main file
 gcc -Wall -Wextra -Werror $path_main $path_file -o $path_exe
 
