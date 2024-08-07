@@ -25,6 +25,4 @@ ZiTester is a tool designed to test and verify the status of exercise files for 
 
 HERE WILL BE THE MAGIC COMMAND FOR ALL
 
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+## ...
