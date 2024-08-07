@@ -7,6 +7,8 @@
 #include <limits.h>
 #include <unistd.h>
 #include <string.h>
+#include <dirent.h>
+#include <sys/stat.h>
 
 /* Structs ---------------------------------------------------*/
 typedef struct status_ex_dir
