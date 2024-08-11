@@ -36,7 +36,14 @@ void z_C01_ex00(status_ex_dir *status_exr, int *pos_ptr);
 void z_C01_ex01(status_ex_dir *status_exr, int *pos_ptr);
 void z_C01_ex02(status_ex_dir *status_exr, int *pos_ptr);
 void z_C01_ex03(status_ex_dir *status_exr, int *pos_ptr);
+void z_C01_ex04(status_ex_dir *status_exr, int *pos_ptr);
+void z_C01_ex05(status_ex_dir *status_exr, int *pos_ptr);
 void z_C01_ex06(status_ex_dir *status_exr, int *pos_ptr);
+void z_C01_ex07(status_ex_dir *status_exr, int *pos_ptr);
+void z_C01_ex08(status_ex_dir *status_exr, int *pos_ptr);
+
+/* Day 02 Functions ------------------------------------------*/
+//! CNT
 
 /* Macros -----------------------------------------------------*/
 #define MAX_EX_C00 9

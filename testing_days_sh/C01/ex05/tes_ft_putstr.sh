@@ -2,7 +2,7 @@
 
 path_main=/home/$USER/ziTester/main-files_days/C01/ex05/main.c
 path_exe=/home/$USER/ziTester/main-files_days/C01/ex05/user_exe
-path_file=ex05/ft_pustr.c
+path_file=ex05/ft_putstr.c
 path_expected_output=/home/$USER/ziTester/main-files_days/C01/ex05/expected_output
 path_user_output=/home/$USER/ziTester/main-files_days/C01/ex05/user_output
 path_diff_output=/home/$USER/ziTester/main-files_days/C01/ex05/diff_output

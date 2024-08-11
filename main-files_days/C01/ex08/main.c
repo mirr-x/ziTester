@@ -3,7 +3,7 @@
 
 void ft_sort_int_tab(int *tab, int size);
 
-void ft_swap(int *a, int *b)
+void swapppp(int *a, int *b)
 {
     int temp;
 
@@ -29,7 +29,7 @@ void shuffle_array(int *arr, int size)
     counter = 0;
     while (counter < size * 5)
     {
-        ft_swap(&arr[rand() % size], &arr[rand() % size]);
+        swapppp(&arr[rand() % size], &arr[rand() % size]);
         counter++;
     }
 }

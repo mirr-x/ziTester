@@ -10,12 +10,12 @@
  * @param pos_ptr A pointer to an integer that keeps track of the position in the status_exr array.
  */
 
-void z_C01_ex00(status_ex_dir *status_exr, int *pos_ptr)
+void z_C01_ex04(status_ex_dir *status_exr, int *pos_ptr)
 {
-    char *folder = "ex00";
-    char *file = "ft_ft.c";
-    char *sh_file = "/home/$USER/ziTester/testing_days_sh/C01/ex00/tes_ft_ft.sh";
-    char *path_file = "ex00/ft_ft.c";
+    char *folder = "ex04";
+    char *file = "ft_ultimate_div_mod.c";
+    char *sh_file = "/home/$USER/ziTester/testing_days_sh/C01/ex04/tes_ft_ultimate_div_mod.sh";
+    char *path_file = "ex04/ft_ultimate_div_mod.c";
     // not--------------------------------------------
     DIR *dir = opendir(folder);
     if (dir)

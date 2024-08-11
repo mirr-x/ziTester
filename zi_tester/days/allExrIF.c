@@ -30,11 +30,11 @@ void z_test_C01_ex_folder(char *ex_folder, status_ex_dir *status_exr, int *pos_p
     }
     else if (strcmp(ex_folder, "ex04") == 0)
     {
-        // Add code for ex04
+        z_C01_ex04(status_exr, pos_ptr);
     }
     else if (strcmp(ex_folder, "ex05") == 0)
     {
-        // Add code for ex05
+        z_C01_ex05(status_exr, pos_ptr);
     }
     else if (strcmp(ex_folder, "ex06") == 0)
     {
@@ -42,10 +42,10 @@ void z_test_C01_ex_folder(char *ex_folder, status_ex_dir *status_exr, int *pos_p
     }
     else if (strcmp(ex_folder, "ex07") == 0)
     {
-        // Add code for ex07
+        z_C01_ex07(status_exr, pos_ptr);
     }
     else if (strcmp(ex_folder, "ex08") == 0)
     {
-        // Add code for ex08
+        z_C01_ex08(status_exr, pos_ptr);
     }
 }
