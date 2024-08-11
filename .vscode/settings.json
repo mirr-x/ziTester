@@ -22,6 +22,18 @@
     {
       "folderPath": "ziTester/zi_tester/tools/",
       "color": "foldercolorizer.Gold"
+    },
+    {
+      "folderPath": "ziTester/main-files_days/C01/",
+      "badge": "✅"
+    },
+    {
+      "folderPath": "ziTester/testing_days_sh/C01/",
+      "badge": "✅"
+    },
+    {
+      "folderPath": "ziTester/zi_tester/days/C01/",
+      "badge": "✅"
     }
   ],
   "files.associations": {

@@ -1,4 +1,4 @@
-#include "../zi_main.h"
+#include "../../zi_main.h"
 
 /**
  * @brief Checks the status of a specific exercise directory and updates the status_exr array accordingly.
@@ -10,12 +10,12 @@
  * @param pos_ptr A pointer to an integer that keeps track of the position in the status_exr array.
  */
 
-void z_C01_ex06(status_ex_dir *status_exr, int *pos_ptr)
+void z_C01_ex04(status_ex_dir *status_exr, int *pos_ptr)
 {
-    char *folder = "ex06";
-    char *file = "ft_strlen.c";
-    char *sh_file = "/home/$USER/ziTester/testing_days_sh/C01/ex06/tes_ft_strlen.sh";
-    char *path_file = "ex06/ft_strlen.c";
+    char *folder = "ex04";
+    char *file = "ft_ultimate_div_mod.c";
+    char *sh_file = "/home/$USER/ziTester/testing_days_sh/C01/ex04/tes_ft_ultimate_div_mod.sh";
+    char *path_file = "ex04/ft_ultimate_div_mod.c";
     // not--------------------------------------------
     DIR *dir = opendir(folder);
     if (dir)

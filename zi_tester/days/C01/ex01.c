@@ -1,21 +1,21 @@
-#include "../zi_main.h"
+#include "../../zi_main.h"
 
 /**
  * @brief Checks the status of a specific exercise directory and updates the status_exr array accordingly.
- * 
+ *
  * This function takes a pointer to a status_ex_dir struct and a pointer to an integer as parameters.
  * It checks the status of the exercise directory specified by the folder variable and updates the status_exr array based on the results.
- * 
+ *
  * @param status_exr A pointer to a status_ex_dir struct that holds the status of exercise directories.
  * @param pos_ptr A pointer to an integer that keeps track of the position in the status_exr array.
  */
 
-void z_C01_ex02(status_ex_dir *status_exr, int *pos_ptr)
+void z_C01_ex01(status_ex_dir *status_exr, int *pos_ptr)
 {
-    char *folder = "ex02";
-    char *file = "ft_swap.c";
-    char *sh_file = "/home/$USER/ziTester/testing_days_sh/C01/ex02/tes_ft_swap.sh";
-    char *path_file = "ex02/ft_swap.c";
+    char *folder = "ex01";
+    char *file = "ft_ultimate_ft.c";
+    char *sh_file = "/home/$USER/ziTester/testing_days_sh/C01/ex01/tes_ft_ultimate_ft.sh";
+    char *path_file = "ex01/ft_ultimate_ft.c";
     // not--------------------------------------------
     DIR *dir = opendir(folder);
     if (dir)
