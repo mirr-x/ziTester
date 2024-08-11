@@ -1,0 +1,32 @@
+{
+  "folder-color.pathColors": [
+    {
+      "folderPath": "ziTester/testing_days_sh/",
+      "color": "foldercolorizer.CarrotOrange",
+      "badge": "SH"
+    },
+    {
+      "folderPath": "ziTester/main-files_days/",
+      "color": "foldercolorizer.DeepSkyBlue",
+      "badge": "MN"
+    },
+    {
+      "folderPath": "ziTester/zi_tester/",
+      "color": "foldercolorizer.PurpleMedium",
+      "badge": "C"
+    },
+    {
+      "folderPath": "ziTester/zi_tester/days/",
+      "color": "foldercolorizer.OrangeRed"
+    },
+    {
+      "folderPath": "ziTester/zi_tester/tools/",
+      "color": "foldercolorizer.Gold"
+    }
+  ],
+  "files.associations": {
+    "dirent.h": "c",
+    "stat.h": "c",
+    "zi_main.h": "c"
+  }
+}

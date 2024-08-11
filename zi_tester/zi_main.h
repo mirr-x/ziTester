@@ -43,31 +43,17 @@ void z_C01_ex06(status_ex_dir *status_exr, int *pos_ptr);
 #define MAX_FILES 100
 
 /* Colors -----------------------------------------------------*/
-
-/* Color : blue */
-const char *blue = "\033[34m";
-/* Color : cyan */
-const char *cyan = "\033[36m";
-/* Color : purple */
-const char *purple = "\033[35m";
-/* Color : red */
-const char *red = "\033[31m";
-/* Color : green */
-const char *green = "\033[32m";
-/* Color : yellow */
-const char *yellow = "\033[33m";
-/* Color : orange */
-const char *orange = "\033[0;33m";
-/* Color : bold */
-const char *bold = "\033[1m";
-/* Color : underline */
-const char *underline = "\033[4m";
-/* color : pink */
-const char *pink = "\033[95m";
-/* Color : highlight */
-const char *highlight = "\033[7m";
-/* Reset color */
-const char *reset = "\033[0m";
-
+extern const char *blue;
+extern const char *cyan;
+extern const char *purple;
+extern const char *red;
+extern const char *green;
+extern const char *yellow;
+extern const char *orange;
+extern const char *bold;
+extern const char *underline;
+extern const char *pink;
+extern const char *highlight;
+extern const char *reset;
 
 #endif // ZI_MAIN_H
