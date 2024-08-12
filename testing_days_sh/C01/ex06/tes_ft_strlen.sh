@@ -14,6 +14,20 @@ YELLOW='\033[33m'
 RESET='\033[0m'
 PURPLE='\033[35m'
 
+#check normin
+norminette $path_file > $path_norm_output
+
+# Check if ": OK!" is present in the norminette output file
+if grep -q ": OK!" "$path_norm_output"; then
+    echo -e "${GREEN} -> NORMINETTE OK ${RESET}"
+else
+    echo -e "${RED}\n\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX${RESET}"
+    echo -e "${RED}\n\t\t !! HERE IS THE NORM OUTPUT !! \n${RESET}"
+    cat "$path_norm_output"
+    echo -e "${RED}\n\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX${RESET}"
+fi
+
+
 # run the code and compile it with the main file
 gcc -Wall -Wextra -Werror $path_main $path_file -o $path_exe
 
@@ -63,5 +77,10 @@ fi
 if [ -f $path_diff_output ]; then
     rm $path_diff_output
 fi
+
+if [ -f $path_norm_output ]; then
+    rm $path_norm_output
+fi
+
 
 exit $status

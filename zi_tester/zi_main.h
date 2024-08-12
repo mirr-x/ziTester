@@ -42,11 +42,23 @@ void z_C01_ex06(status_ex_dir *status_exr, int *pos_ptr);
 void z_C01_ex07(status_ex_dir *status_exr, int *pos_ptr);
 void z_C01_ex08(status_ex_dir *status_exr, int *pos_ptr);
 
-/* Day 02 Functions ------------------------------------------*/
+/* Day 00 Functions ------------------------------------------*/
 //! CNT
+void z_test_C00_ex_folder(char *ex_folder, status_ex_dir *status_exr, int *pos_ptr);
+void zi_TES_C00(); /* here we creat malloc od strructs */
+void z_C00_ex00(status_ex_dir *status_exr, int *pos_ptr);
+void z_C00_ex01(status_ex_dir *status_exr, int *pos_ptr);
+void z_C00_ex02(status_ex_dir *status_exr, int *pos_ptr);
+void z_C00_ex03(status_ex_dir *status_exr, int *pos_ptr);
+void z_C00_ex04(status_ex_dir *status_exr, int *pos_ptr);
+void z_C00_ex05(status_ex_dir *status_exr, int *pos_ptr);
+void z_C00_ex06(status_ex_dir *status_exr, int *pos_ptr);
+void z_C00_ex07(status_ex_dir *status_exr, int *pos_ptr);
+void z_C00_ex08(status_ex_dir *status_exr, int *pos_ptr);
 
 /* Macros -----------------------------------------------------*/
 #define MAX_EX_C00 9
+#define MAX_EX_C01 9
 #define MAX_FILES 100
 
 /* Colors -----------------------------------------------------*/

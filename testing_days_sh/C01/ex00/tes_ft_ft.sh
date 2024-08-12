@@ -18,17 +18,13 @@ PURPLE='\033[35m'
 #check normin
 norminette $path_file > $path_norm_output
 
-size_norm_output=$(stat -c%s $path_norm_output)
-
-if [ $size_norm_output -eq 18 ]
-then
+# Check if ": OK!" is present in the norminette output file
+if grep -q ": OK!" "$path_norm_output"; then
     echo -e "${GREEN} -> NORMINETTE OK ${RESET}"
 else
     echo -e "${RED}\n\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX${RESET}"
     echo -e "${RED}\n\t\t !! HERE IS THE NORM OUTPUT !! \n${RESET}"
-
-    cat $path_norm_output
-
+    cat "$path_norm_output"
     echo -e "${RED}\n\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX${RESET}"
 fi
 

@@ -1,11 +1,12 @@
 #!/bin/bash
 
-path_main=/home/$USER/ziTester/main-files_days/C01/ex01/main.c
-path_exe=/home/$USER/ziTester/main-files_days/C01/ex01/user_exe
-path_file=ex01/ft_ultimate_ft.c
-path_expected_output=/home/$USER/ziTester/main-files_days/C01/ex01/expected_output
-path_user_output=/home/$USER/ziTester/main-files_days/C01/ex01/user_output
-path_diff_output=/home/$USER/ziTester/main-files_days/C01/ex01/diff_output
+path_main=/home/$USER/ziTester/main-files_days/C00/ex02/main.c
+path_exe=/home/$USER/ziTester/main-files_days/C00/ex02/user_exe
+path_file=ex02/ft_print_reverse_alphabet.c
+path_expected_output=/home/$USER/ziTester/main-files_days/C00/ex02/expected_output
+path_user_output=/home/$USER/ziTester/main-files_days/C00/ex02/user_output
+path_diff_output=/home/$USER/ziTester/main-files_days/C00/ex02/diff_output
+path_norm_output=/home/$USER/ziTester/main-files_days/C00/ex02/norm_output
 
 # colors
 GREEN='\033[32m'
@@ -26,6 +27,8 @@ else
     cat "$path_norm_output"
     echo -e "${RED}\n\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX${RESET}"
 fi
+
+
 
 # run the code and compile it with the main file
 gcc -Wall -Wextra -Werror $path_main $path_file -o $path_exe
@@ -64,7 +67,6 @@ else
     echo -e "${YELLOW}\n******************************************************************************************${RESET} ${RED}  KO { ❌  } ${RESET}"
 fi
 
-
 # clean the mess if it exists
 if [ -f $path_exe ]; then
     rm $path_exe
@@ -81,5 +83,4 @@ fi
 if [ -f $path_norm_output ]; then
     rm $path_norm_output
 fi
-
 exit $status

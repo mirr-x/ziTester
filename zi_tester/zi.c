@@ -34,6 +34,7 @@ void z_test_day_folder(char *folder_nm)
 {
     if (strcmp(folder_nm, "C00") == 0)
     {
+        zi_TES_C00();
     }
     else if (strcmp(folder_nm, "C01") == 0)
     {
