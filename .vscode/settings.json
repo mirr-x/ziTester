@@ -34,6 +34,18 @@
     {
       "folderPath": "ziTester/zi_tester/days/C01/",
       "badge": "✅"
+    },
+    {
+      "folderPath": "ziTester/zi_tester/days/C00/",
+      "badge": "✅"
+    },
+    {
+      "folderPath": "ziTester/testing_days_sh/C00/",
+      "badge": "✅"
+    },
+    {
+      "folderPath": "ziTester/main-files_days/C00/",
+      "badge": "✅"
     }
   ],
   "files.associations": {
