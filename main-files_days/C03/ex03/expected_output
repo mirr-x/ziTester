@@ -1,0 +1,5 @@
+n: 0, same string: yours: 'aaaa', std: 'aaaa', 1$
+n: 2, same string: yours: 'aaaaxy', std: 'aaaaxy', 1$
+n: 3, same string: yours: 'aaaaxyz', std: 'aaaaxyz', 1$
+n: 4, same string: yours: 'aaaaxyz', std: 'aaaaxyz', 1$
+n: 5, same string: yours: 'aaaaxyz', std: 'aaaaxyz', 1$
