@@ -58,11 +58,9 @@ void z_test_day_folder(char *folder_nm)
     }
     else if (strcmp(folder_nm, "C06") == 0)
     {
-        zi_TES_C06();
     }
     else if (strcmp(folder_nm, "C07") == 0)
     {
-        zi_TES_C07();
     }
     else if (strcmp(folder_nm, "C08") == 0)
     {

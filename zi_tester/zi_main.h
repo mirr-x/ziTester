@@ -55,6 +55,56 @@ void z_C00_ex06(status_ex_dir *status_exr, int *pos_ptr);
 void z_C00_ex07(status_ex_dir *status_exr, int *pos_ptr);
 void z_C00_ex08(status_ex_dir *status_exr, int *pos_ptr);
 
+/* Day 02 Functions ------------------------------------------*/
+void z_test_C02_ex_folder(char *ex_folder, status_ex_dir *status_exr, int *pos_ptr);
+void zi_TES_C02(); /* here we creat malloc od strructs */
+void z_C02_ex00(status_ex_dir *status_exr, int *pos_ptr);
+void z_C02_ex01(status_ex_dir *status_exr, int *pos_ptr);
+void z_C02_ex02(status_ex_dir *status_exr, int *pos_ptr);
+void z_C02_ex03(status_ex_dir *status_exr, int *pos_ptr);
+void z_C02_ex04(status_ex_dir *status_exr, int *pos_ptr);
+void z_C02_ex05(status_ex_dir *status_exr, int *pos_ptr);
+void z_C02_ex06(status_ex_dir *status_exr, int *pos_ptr);
+void z_C02_ex07(status_ex_dir *status_exr, int *pos_ptr);
+void z_C02_ex08(status_ex_dir *status_exr, int *pos_ptr);
+void z_C02_ex09(status_ex_dir *status_exr, int *pos_ptr);
+void z_C02_ex10(status_ex_dir *status_exr, int *pos_ptr);
+void z_C02_ex11(status_ex_dir *status_exr, int *pos_ptr);
+void z_C02_ex12(status_ex_dir *status_exr, int *pos_ptr);
+
+/* Day 03 Functions ------------------------------------------*/
+void z_test_C03_ex_folder(char *ex_folder, status_ex_dir *status_exr, int *pos_ptr);
+void zi_TES_C03(); /* here we creat malloc od strructs */
+void z_C03_ex00(status_ex_dir *status_exr, int *pos_ptr);
+void z_C03_ex01(status_ex_dir *status_exr, int *pos_ptr);
+void z_C03_ex02(status_ex_dir *status_exr, int *pos_ptr);
+void z_C03_ex03(status_ex_dir *status_exr, int *pos_ptr);
+void z_C03_ex04(status_ex_dir *status_exr, int *pos_ptr);
+void z_C03_ex05(status_ex_dir *status_exr, int *pos_ptr);
+
+/* Day 04 Functions ------------------------------------------*/
+void z_test_C04_ex_folder(char *ex_folder, status_ex_dir *status_exr, int *pos_ptr);
+void zi_TES_C04(); /* here we creat malloc od strructs */
+void z_C04_ex00(status_ex_dir *status_exr, int *pos_ptr);
+void z_C04_ex01(status_ex_dir *status_exr, int *pos_ptr);
+void z_C04_ex02(status_ex_dir *status_exr, int *pos_ptr);
+void z_C04_ex03(status_ex_dir *status_exr, int *pos_ptr);
+void z_C04_ex04(status_ex_dir *status_exr, int *pos_ptr);
+void z_C04_ex05(status_ex_dir *status_exr, int *pos_ptr);
+
+/* Day 05 Functions ------------------------------------------*/
+void z_test_C05_ex_folder(char *ex_folder, status_ex_dir *status_exr, int *pos_ptr);
+void zi_TES_C05(); /* here we creat malloc od strructs */
+void z_C05_ex00(status_ex_dir *status_exr, int *pos_ptr);
+void z_C05_ex01(status_ex_dir *status_exr, int *pos_ptr);
+void z_C05_ex02(status_ex_dir *status_exr, int *pos_ptr);
+void z_C05_ex03(status_ex_dir *status_exr, int *pos_ptr);
+void z_C05_ex04(status_ex_dir *status_exr, int *pos_ptr);
+void z_C05_ex05(status_ex_dir *status_exr, int *pos_ptr);
+void z_C05_ex06(status_ex_dir *status_exr, int *pos_ptr);
+void z_C05_ex07(status_ex_dir *status_exr, int *pos_ptr);
+void z_C05_ex08(status_ex_dir *status_exr, int *pos_ptr);
+
 /* Macros -----------------------------------------------------*/
 #define MAX_EX_C00 9
 #define MAX_EX_C01 9
