@@ -19,7 +19,6 @@ typedef struct status_ex_dir
 
 /* Functions -------------------------------------------------*/
 void z_display_Summary_Rusults(status_ex_dir *status_exr);
-int z_len_2dArray(char **arr2d);
 int z_check_IF_folder_exist(char *name);
 void z_print_help();
 void z_check_if_im_in_right_dir(char *folder_nm);
@@ -59,6 +58,13 @@ void z_C00_ex08(status_ex_dir *status_exr, int *pos_ptr);
 /* Macros -----------------------------------------------------*/
 #define MAX_EX_C00 9
 #define MAX_EX_C01 9
+#define MAX_EX_C02 13
+#define MAX_EX_C03 6
+#define MAX_EX_C04 6
+#define MAX_EX_C05 9
+#define MAX_EX_C06 4
+#define MAX_EX_C07 6
+
 #define MAX_FILES 100
 
 /* Colors -----------------------------------------------------*/
