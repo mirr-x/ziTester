@@ -46,6 +46,50 @@
     {
       "folderPath": "ziTester/main-files_days/C00/",
       "badge": "✅"
+    },
+    {
+      "folderPath": "ziTester/main-files_days/C03/",
+      "badge": "✅"
+    },
+    {
+      "folderPath": "ziTester/main-files_days/C05/",
+      "badge": "✅"
+    },
+    {
+      "folderPath": "ziTester/main-files_days/C04/",
+      "badge": "✅"
+    },
+    {
+      "folderPath": "ziTester/testing_days_sh/C02/",
+      "badge": "✅"
+    },
+    {
+      "folderPath": "ziTester/testing_days_sh/C03/",
+      "badge": "✅"
+    },
+    {
+      "folderPath": "ziTester/testing_days_sh/C04/",
+      "badge": "✅"
+    },
+    {
+      "folderPath": "ziTester/testing_days_sh/C05/",
+      "badge": "✅"
+    },
+    {
+      "folderPath": "ziTester/zi_tester/days/C02/",
+      "badge": "✅"
+    },
+    {
+      "folderPath": "ziTester/zi_tester/days/C03/",
+      "badge": "✅"
+    },
+    {
+      "folderPath": "ziTester/zi_tester/days/C04/",
+      "badge": "✅"
+    },
+    {
+      "folderPath": "ziTester/zi_tester/days/C05/",
+      "badge": "✅"
     }
   ],
   "files.associations": {

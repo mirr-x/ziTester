@@ -1,11 +1,12 @@
 #include <stdio.h>
-#include <strings.h>
+#include <string.h>
 
-char	*ft_strcpy(char *dest, char *src);
 
-void	set_str(char *src, char *dest)
+char *ft_strcpy(char *dest, char *src);
+
+void set_str(char *src, char *dest)
 {
-	int	pos = 0;
+	int pos = 0;
 
 	while (src[pos] != '\0')
 	{
@@ -23,7 +24,7 @@ void reset_strs(char *a, char *b, char *c, char *d)
 	set_str("bbbbbbbbbbbbbbbbbbb", d);
 }
 
-int	same_result(char *expected, char *output, int len)
+int same_result(char *expected, char *output, int len)
 {
 	int pos;
 	int res;
@@ -45,7 +46,7 @@ int	same_result(char *expected, char *output, int len)
 	return res;
 }
 
-int	main(void)
+int main(void)
 {
 	char src[20];
 	char dest[20];
@@ -58,15 +59,14 @@ int	main(void)
 	set_str("efgh", dest);
 	set_str("efgh", std_dest);
 	printf("%d\n", same_result(
-				strcpy(std_dest, std_src),
-				ft_strcpy(dest, src),
-				3));
+					   strcpy(std_dest, std_src),
+					   ft_strcpy(dest, src),
+					   3));
 
 	reset_strs(src, std_src, dest, std_dest);
 	set_str("", dest);
 	set_str("", std_dest);
 	printf("%i\n", same_result(strcpy(std_dest, "abc"), ft_strcpy(dest, "abc"), 2));
-
 
 	reset_strs(src, std_src, dest, std_dest);
 	set_str("ab", src);
@@ -74,6 +74,6 @@ int	main(void)
 	set_str("efghijklm", dest);
 	set_str("efghijklm", std_dest);
 	printf("%d\n", same_result(
-				strcpy(std_dest, std_src),
-			   	ft_strcpy(dest, src), 3));
+					   strcpy(std_dest, std_src),
+					   ft_strcpy(dest, src), 3));
 }
