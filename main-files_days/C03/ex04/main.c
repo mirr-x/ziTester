@@ -83,5 +83,5 @@ int main() {
 	s2 = "xxx";
 	res = ft_strstr(s1, s2);
 	std_res = strstr(s1, s2);
-	printf("return NULL if src is empty: %i (yours: '%p', std: '%p')\n", res == std_res, res , std_res);
+	printf("return NULL if src is empty: %i (yours: '%s', std: '%s')\n", res == std_res, res , std_res);
 }
