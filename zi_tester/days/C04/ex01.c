@@ -13,9 +13,9 @@
 void z_C04_ex01(status_ex_dir *status_exr, int *pos_ptr)
 {
     char *folder = "ex01";
-    char *file = "ft_strlen.c";
-    char *sh_file = "/home/$USER/ziTester/testing_days_sh/C04/ex01/tes_ft_strlen.sh";
-    char *path_file = "ex01/ft_strlen.c";
+    char *file = "ft_putstr.c";
+    char *sh_file = "/home/$USER/ziTester/testing_days_sh/C04/ex01/tes_ft_putstr.sh";
+    char *path_file = "ex01/ft_putstr.c";
     // not--------------------------------------------
     DIR *dir = opendir(folder);
     if (dir)

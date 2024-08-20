@@ -2,7 +2,7 @@
 
 path_main=/home/$USER/ziTester/main-files_days/C05/ex03/main.c
 path_exe=/home/$USER/ziTester/main-files_days/C05/ex03/user_exe
-path_file=ex03/ft_recursive_power..c
+path_file=ex03/ft_recursive_power.c
 path_expected_output=/home/$USER/ziTester/main-files_days/C05/ex03/expected_output
 path_user_output=/home/$USER/ziTester/main-files_days/C05/ex03/user_output
 path_diff_output=/home/$USER/ziTester/main-files_days/C05/ex03/diff_output

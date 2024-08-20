@@ -60,8 +60,8 @@ int	main(void)
 	set_str("efgh", dest);
 	set_str("efgh", std_dest);
 	printf("%d\n", same_result(
-				strncpy(std_dest, std_src, 0),
-				ft_strncpy(dest, src, 0),
+				strncpy(std_dest, std_src, 1),
+				ft_strncpy(dest, src, 1),
 				3));
 
 	reset_strs(src, std_src, dest, std_dest);
