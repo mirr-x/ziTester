@@ -77,7 +77,7 @@ if [ -d "$TARGET_DIR" ]; then
 /___|_|\/   \___||___/\__\___|_|   
                                    
                                 ${GREEN}....is now installed!${NC}
-${BLUE}--------------------------------------------------------------------------%
+${BLUE}
 --------------------------------------------------------------------------%
 Made By: mirr-x              &&     Made By: mdbentaleb                   |
 https://github.com/mirr-x    &&     https://github.com/mdbentaleb         |
