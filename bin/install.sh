@@ -64,8 +64,8 @@ sleep 1
 
 # Confirm completion
 if [ -d "$TARGET_DIR" ]; then
-    echo "${GREEN}Test Framework successfully built and installed.${NC}"
+    echo -e "\n\n${GREEN}ziTester has been successfully installed.${NC}"
 else
-    echo "${RED}Failed to clone the repository.${NC}"
+    echo -e "\n\n${RED}Failed to clone the repository.${NC}"
     exit 1
 fi
