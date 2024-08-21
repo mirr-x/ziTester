@@ -78,6 +78,7 @@ if [ -d "$TARGET_DIR" ]; then
                                    
                                 ${GREEN}....is now installed!${NC}
 ${BLUE}
+
 --------------------------------------------------------------------------%
 Made By: mirr-x              &&     Made By: mdbentaleb                   |
 https://github.com/mirr-x    &&     https://github.com/mdbentaleb         |
