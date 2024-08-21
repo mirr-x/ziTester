@@ -109,4 +109,4 @@ ${NC}${NC}"
 else
     echo -e "\n\n${FMT_LIM_RED}Failed to clone the repository.${NC}"
     exit 1
-fiz
+
