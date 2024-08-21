@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Define color codes
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[0;33m'
+NC='\033[0m' # No Color
+
 # Define the path to the project and Makefile
 TARGET_DIR="/home/$USER/ziTester"
 MAKEFILE_PATH="$TARGET_DIR/bin/Makefile"
@@ -10,11 +16,10 @@ if [ -d "$TARGET_DIR" ]; then
 fi
 
 # Clone the repository
-echo -e "Building the Test Framework...\n"
-git clone https://github.com/mirr-x/ziTester "$TARGET_DIR" 2> /dev/null
+echo -e "${YELLOW}Building the Test Framework...${NC}\n"
+git clone https://github.com/mirr-x/ziTester "$TARGET_DIR"
 
 sleep 1
-
 
 # Navigate to the directory containing the Makefile
 cd "$TARGET_DIR/bin"
@@ -23,7 +28,7 @@ cd "$TARGET_DIR/bin"
 if [ -f "Makefile" ]; then
     make
 else
-    echo "No Makefile found in $TARGET_DIR. Skipping build step."
+    echo "${RED}No Makefile found in $TARGET_DIR. Skipping build step.${NC}"
 fi
 
 sleep 1
@@ -44,8 +49,7 @@ sleep 1
 
 # Confirm completion
 if [ -d "$TARGET_DIR" ]; then
-    echo -e "Test Framework successfully built and installed.\n"
+    echo -e "${GREEN}Test Framework successfully built and installed.${NC}\n"
 else
-    echo "Failed to clone the repository."
+    echo "${RED}Failed to clone the repository.${NC}"
 fi
-
