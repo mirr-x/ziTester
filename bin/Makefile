@@ -11,11 +11,11 @@ all: $(TARGET)
 
 # Rule to compile and link the source files into the executable
 $(TARGET):
-	$(CC) $(SRC) -o $@
+	@$(CC) $(SRC) -o $@
 
 # Rule to clean up generated files
 clean:
-	rm -f $(TARGET)
+	@rm -f $(TARGET)
 
 # Rule to rebuild the project
 re: clean all
