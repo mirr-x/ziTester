@@ -90,7 +90,7 @@ if [ -d "$TARGET_DIR" ]; then
 
 
 ${FMT_LIM_RED}INSTRUCTIONS:${NC}
-    ${FMT_LIM_ORANGE}• USAGE:
+    ${FMT_LIM_ORANGE}• USAGE:${NC}
         $ zi [FOLDER NAME]
 
     ${FMT_LIM_ORANGE}• EXAMPLE:${NC}
