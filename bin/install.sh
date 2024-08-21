@@ -91,10 +91,10 @@ if [ -d "$TARGET_DIR" ]; then
 
 ${FMT_LIM_RED}INSTRUCTIONS:${NC}
     ${FMT_LIM_ORANGE}• USAGE:${NC}
-        $ zi [FOLDER NAME]
+        ${FMT_LIM_RED}${NC} zi [FOLDER NAME]
 
     ${FMT_LIM_ORANGE}• EXAMPLE:${NC}
-        $ zi C05
+        ${FMT_LIM_RED}${NC} zi C05
 
 ${FMT_LIM_BLUE}
 --------------------------------------------------------------------------%
