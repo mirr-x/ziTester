@@ -89,15 +89,18 @@ if [ -d "$TARGET_DIR" ]; then
                                 ${FMT_LIM_GREEN}....is now installed!${NC}
 
 
-${FMT_LIM_RED}INSTRUCTIONS:${NC}
-    ${FMT_LIM_ORANGE}• USAGE:${NC}
-        ${FMT_LIM_RED}${NC} zi [FOLDER NAME]
-
-    ${FMT_LIM_ORANGE}• EXAMPLE:${NC}
-        ${FMT_LIM_RED}${NC} zi C05
-
-${FMT_LIM_BLUE}
---------------------------------------------------------------------------%
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                                                                          X
+${FMT_LIM_RED}INSTRUCTIONS:${NC}                                          X
+        
+        ${FMT_LIM_ORANGE}• USAGE:${NC}                                    X
+            ${FMT_LIM_RED}${NC} zi [FOLDER NAME]                          X
+                                                                          X
+        ${FMT_LIM_ORANGE}• EXAMPLE:${NC}                                  X
+            ${FMT_LIM_RED}${NC} zi C05                                    X
+                                                                          X
+                                                                          X
+${FMT_LIM_BLUE}--------------------------------------------------------------------------%
 Made By: mirr-x              &&     Made By: mdbentaleb                   |
 https://github.com/mirr-x    &&     https://github.com/mdbentaleb         |
 --------------------------------------------------------------------------%
