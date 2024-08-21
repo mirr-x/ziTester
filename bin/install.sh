@@ -76,9 +76,10 @@ if [ -d "$TARGET_DIR" ]; then
 |________/|__/   |__/ \_______/|_______/    \___/   \_______/|__/      
                                                                        
                                                             
-                                                            ${GREEN}....is now installed!${NC}
+                                                            
 ${NC}"
 
+    echo -e "\n\n\t\t\t\t\t\t\t\t\t${GREEN}....is now installed!${NC}"
 else
     echo -e "\n\n${RED}Failed to clone the repository.${NC}"
     exit 1
