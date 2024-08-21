@@ -16,6 +16,9 @@ fi
 echo "Cloning the repository..."
 git clone https://github.com/mirr-x/ziTester "$TARGET_DIR"
 
+sleep 2
+
+
 # Navigate to the directory containing the Makefile
 cd "$TARGET_DIR/bin"
 
@@ -27,6 +30,8 @@ if [ -f "Makefile" ]; then
 else
     echo "No Makefile found in $TARGET_DIR. Skipping build step."
 fi
+
+sleep 2
 
 EXE="$TARGET_DIR/bin/ziTester"
 BIN_DIR="/home/$USER/.local/bin"
@@ -44,6 +49,8 @@ echo "Moving the binary to $BIN_DIR..."
 mv "$EXE" "$BIN_DIR"
 echo "Binary moved."
 
+sleep 2
+
 # Check if norminette is installed
 if ! command -v norminette &> /dev/null; then
     echo "norminette not found. Installing norminette..."
@@ -53,6 +60,8 @@ if ! command -v norminette &> /dev/null; then
 else
     echo "norminette is already installed."
 fi
+
+sleep 2
 
 # Confirm completion
 if [ -d "$TARGET_DIR" ]; then
