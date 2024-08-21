@@ -90,11 +90,16 @@
     {
       "folderPath": "ziTester/zi_tester/days/C05/",
       "badge": "✅"
+    },
+    {
+      "folderPath": "ziTester/main-files_days/C02/",
+      "badge": "✅"
     }
   ],
   "files.associations": {
     "dirent.h": "c",
     "stat.h": "c",
     "zi_main.h": "c"
-  }
+  },
+  "makefile.makefilePath": ""
 }
