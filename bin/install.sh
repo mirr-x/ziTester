@@ -94,10 +94,10 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ${FMT_LIM_RED}INSTRUCTIONS:${NC}                                          X
                                                                           X
         ${FMT_LIM_ORANGE}• USAGE:${NC}                                    X
-            ${FMT_LIM_RED}${NC} zi [FOLDER NAME]                          X
+            ${FMT_LIM_RED}$ >${NC} zi [FOLDER NAME]                          X
                                                                           X
         ${FMT_LIM_ORANGE}• EXAMPLE:${NC}                                  X
-            ${FMT_LIM_RED}${NC} zi C05                                    X
+            ${FMT_LIM_RED}$ >${NC} zi C05                                    X
                                                                           X
                                                                           X
 --------------------------------------------------------------------------%
