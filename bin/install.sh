@@ -6,6 +6,7 @@ RED='\033[31m'
 YELLOW='\033[33m'
 NC='\033[0m'
 PURPLE='\033[35m'
+Orange='\033[33m'
 
 # Define the path to the project and Makefile
 TARGET_DIR="/home/$USER/ziTester"
@@ -71,8 +72,11 @@ if [ -d "$TARGET_DIR" ]; then
  / /| |/ / |  __/\__ \ ||  __/ |   
 /___|_|\/   \___||___/\__\___|_|   
                                    
-                                ${GREEN}....is now installed!${NC}                            
-                                                                       
+                                ${GREEN}....is now installed!${NC}
+${Orange}
+Made By: mirr-x              &&     Made By: mdbentaleb
+https://github.com/mirr-x    &&     https://github.com/mdbentaleb
+${NC}                                                                       
 ${NC}"
 
 else
