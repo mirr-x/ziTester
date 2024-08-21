@@ -104,7 +104,8 @@ ${FMT_LIM_RED}INSTRUCTIONS:${NC}                                          X
 Made By: mirr-x              &&     Made By: mdbentaleb                   |
 https://github.com/mirr-x    &&     https://github.com/mdbentaleb         |
 --------------------------------------------------------------------------%
-${NC}${NC}"
+${NC}
+${NC}"
 
 else
     echo -e "\n\n${FMT_LIM_RED}Failed to clone the repository.${NC}"
