@@ -19,7 +19,7 @@ if [ -d "$TARGET_DIR" ]; then
 fi
 
 # Clone the repository
-echo "${YELLOW}Building the Test Framework...${NC}"
+echo "${YELLOW}Building the ziTester...${NC}\n\n"
 if ! git clone https://github.com/mirr-x/ziTester "$TARGET_DIR"; then
     echo "${RED}Failed to clone the repository.${NC}"
     exit 1
