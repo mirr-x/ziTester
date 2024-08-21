@@ -7,6 +7,7 @@ YELLOW='\033[33m'
 NC='\033[0m'
 PURPLE='\033[35m'
 Orange='\033[33m'
+BLUE='\033[34m'
 
 # Define the path to the project and Makefile
 TARGET_DIR="/home/$USER/ziTester"
@@ -29,7 +30,10 @@ fi
 sleep 1
 
 # Navigate to the directory containing the Makefile
-cd "$TARGET_DIR/bin" || { echo "${RED}Failed to navigate to $TARGET_DIR/bin.${NC}"; exit 1; }
+cd "$TARGET_DIR/bin" || {
+    echo "${RED}Failed to navigate to $TARGET_DIR/bin.${NC}"
+    exit 1
+}
 
 # Check if Makefile exists and build the project
 if [ -f "Makefile" ]; then
@@ -73,9 +77,11 @@ if [ -d "$TARGET_DIR" ]; then
 /___|_|\/   \___||___/\__\___|_|   
                                    
                                 ${GREEN}....is now installed!${NC}
-${Orange}
-Made By: mirr-x              &&     Made By: mdbentaleb
-https://github.com/mirr-x    &&     https://github.com/mdbentaleb
+${BLUE}--------------------------------------------------------------------------%
+--------------------------------------------------------------------------%
+Made By: mirr-x              &&     Made By: mdbentaleb                   |
+https://github.com/mirr-x    &&     https://github.com/mdbentaleb         |
+--------------------------------------------------------------------------%
 ${NC}                                                                       
 ${NC}"
 
