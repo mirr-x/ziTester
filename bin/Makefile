@@ -2,7 +2,7 @@
 CC = gcc
 
 # Define the target executable and source files
-TARGET = ziTester
+TARGET = zi
 ROOT = /home/$(USER)/ziTester/zi_tester
 SRC = $(ROOT)/tools/*.c $(ROOT)/days/C0*/*.c $(ROOT)/zi.c
 

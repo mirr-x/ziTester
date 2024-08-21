@@ -3,7 +3,6 @@
 # Define the path to the project and Makefile
 TARGET_DIR="/home/$USER/ziTester"
 MAKEFILE_PATH="$TARGET_DIR/bin/Makefile"
-bin_PATH="$TARGET_DIR/bin/ziTester"
 
 # Check if the directory exists
 if [ -d "$TARGET_DIR" ]; then
@@ -33,7 +32,7 @@ fi
 
 sleep 2
 
-EXE="$TARGET_DIR/bin/ziTester"
+EXE="$TARGET_DIR/bin/zi"
 BIN_DIR="/home/$USER/.local/bin"
 
 # Check if the binary exists
@@ -48,18 +47,6 @@ fi
 echo "Moving the binary to $BIN_DIR..."
 mv "$EXE" "$BIN_DIR"
 echo "Binary moved."
-
-sleep 2
-
-# Check if norminette is installed
-if ! command -v norminette &> /dev/null; then
-    echo "norminette not found. Installing norminette..."
-    python3 -m pip install --upgrade pip setuptools
-    python3 -m pip install norminette
-    echo "norminette installed."
-else
-    echo "norminette is already installed."
-fi
 
 sleep 2
 
