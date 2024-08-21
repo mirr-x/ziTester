@@ -17,12 +17,14 @@ ZiTester is a tool designed to test and verify the status of exercise files for 
 
 | key | value     |
 |-----|-----------|
-| KO  | passed    |
+| OK  | passed    |
 | KO  | FAILED    |
 | NF  | NOT FOUND |
 
-## How to Use
+## Installation
 
-HERE WILL BE THE MAGIC COMMAND FOR ALL
+for zsh
+```sh
 
+```
 ## ...
