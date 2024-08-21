@@ -90,17 +90,17 @@ if [ -d "$TARGET_DIR" ]; then
 
 ${FMT_LIM_BLUE}
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                                                                          ${FMT_LIM_BLUE}X
+${FMT_LIM_RED}INSTRUCTIONS:${NC}                                                             ${FMT_LIM_BLUE}X
+                                                                          ${FMT_LIM_BLUE}X
+        ${FMT_LIM_ORANGE}• USAGE:${NC}                                                          ${FMT_LIM_BLUE}X
+            ${FMT_LIM_RED}$ >${NC} zi [FOLDER NAME]                                          ${FMT_LIM_BLUE}X
                                                                           X
-${FMT_LIM_RED}INSTRUCTIONS:${NC}                                          X
-                                                                          X
-        ${FMT_LIM_ORANGE}• USAGE:${NC}                                    X
-            ${FMT_LIM_RED}$ >${NC} zi [FOLDER NAME]                       X
-                                                                          X
-        ${FMT_LIM_ORANGE}• EXAMPLE:${NC}                                  X
-            ${FMT_LIM_RED}$ >${NC} zi C05                                 X
+        ${FMT_LIM_ORANGE}• EXAMPLE:${NC}                                                        ${FMT_LIM_BLUE}X
+            ${FMT_LIM_RED}$ >${NC} zi C05                                                    ${FMT_LIM_BLUE}X
                                                                           X
                                                                           X
---------------------------------------------------------------------------%
+${FMT_LIM_BLUE}--------------------------------------------------------------------------%
 Made By: mirr-x              &&     Made By: mdbentaleb                   |
 https://github.com/mirr-x    &&     https://github.com/mdbentaleb         |
 --------------------------------------------------------------------------%
