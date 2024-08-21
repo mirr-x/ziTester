@@ -13,7 +13,7 @@ MAKEFILE_PATH="$TARGET_DIR/bin/Makefile"
 EXE="$TARGET_DIR/bin/zi"
 BIN_DIR="/home/$USER/.local/bin"
 
-# Check if the directory exists
+# Check if the directory exists and remove it
 if [ -d "$TARGET_DIR" ]; then
     rm -rf "$TARGET_DIR"
 fi
