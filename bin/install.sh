@@ -16,7 +16,7 @@ if [ -d "$TARGET_DIR" ]; then
 fi
 
 # Clone the repository
-echo -e "${YELLOW}Building the Test Framework...${NC}\n"
+echo "${YELLOW}Building the Test Framework...${NC}\n"
 git clone https://github.com/mirr-x/ziTester "$TARGET_DIR"
 
 sleep 1
@@ -49,7 +49,7 @@ sleep 1
 
 # Confirm completion
 if [ -d "$TARGET_DIR" ]; then
-    echo -e "${GREEN}Test Framework successfully built and installed.${NC}\n"
+    echo "${GREEN}Test Framework successfully built and installed.${NC}\n"
 else
     echo "${RED}Failed to clone the repository.${NC}"
 fi
