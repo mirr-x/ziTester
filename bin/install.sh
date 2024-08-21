@@ -10,10 +10,11 @@ if [ -d "$TARGET_DIR" ]; then
 fi
 
 # Clone the repository
-echo -e "\e[1mBuilding the Test Framework...\e[0m"
+echo -e "Building the Test Framework...\n"
 git clone https://github.com/mirr-x/ziTester "$TARGET_DIR" 2> /dev/null
 
 sleep 1
+
 
 # Navigate to the directory containing the Makefile
 cd "$TARGET_DIR/bin"
@@ -22,7 +23,7 @@ cd "$TARGET_DIR/bin"
 if [ -f "Makefile" ]; then
     make
 else
-    echo -e "\e[33mNo Makefile found in $TARGET_DIR. Skipping build step.\e[0m"
+    echo "No Makefile found in $TARGET_DIR. Skipping build step."
 fi
 
 sleep 1
@@ -31,6 +32,7 @@ EXE="$TARGET_DIR/bin/zi"
 BIN_DIR="/home/$USER/.local/bin"
 
 # Check if the binary exists
+
 if [ ! -d "$BIN_DIR" ]; then
     mkdir -p "$BIN_DIR"
 fi
@@ -42,8 +44,8 @@ sleep 1
 
 # Confirm completion
 if [ -d "$TARGET_DIR" ]; then
-    echo -e "\e[32mTest Framework has been successfully built and installed.\e[0m"
+    echo -e "Test Framework successfully built and installed.\n"
 else
-    echo -e "\e[31mFailed to clone the repository.\e[0m"
+    echo "Failed to clone the repository."
 fi
 
