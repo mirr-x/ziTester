@@ -14,8 +14,8 @@ FMT_LIM_RED="\033[38;5;196m"
 FMT_LIM_ORANGE="\033[38;5;202m"
 FMT_LIM_YELLOW="\033[38;5;226m"
 FMT_LIM_GREEN="\033[38;5;082m"
-FMT_LIM_BLUE="\033[38;5;021m"
-FMT_LIM_PURPLE="\033[38;5;093m"
+FMT_LIM_PURPLE="\033[38;5;021m"
+FMT_LIM_BLUE="\033[38;5;093m"
 FMT_LIM_PINK="\033[38;5;163m"
 #xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
@@ -88,19 +88,19 @@ if [ -d "$TARGET_DIR" ]; then
                                    
                                 ${FMT_LIM_GREEN}....is now installed!${NC}"
     sleep 1
-    echo -e "${FMT_LIM_BLUE}
+    echo -e "${FMT_LIM_PURPLE}
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-                                                                          ${FMT_LIM_BLUE}X
-${FMT_LIM_RED}INSTRUCTIONS:${NC}                                                             ${FMT_LIM_BLUE}X
-                                                                          ${FMT_LIM_BLUE}X
-        ${FMT_LIM_ORANGE}• USAGE:${NC}                                                          ${FMT_LIM_BLUE}X
-            ${FMT_LIM_RED}$ >${NC} zi [FOLDER NAME]                                          ${FMT_LIM_BLUE}X
+                                                                          ${FMT_LIM_PURPLE}X
+${FMT_LIM_RED}INSTRUCTIONS:${NC}                                                             ${FMT_LIM_PURPLE}X
+                                                                          ${FMT_LIM_PURPLE}X
+        ${FMT_LIM_ORANGE}• USAGE:${NC}                                                          ${FMT_LIM_PURPLE}X
+            ${FMT_LIM_RED}$ >${NC} zi [FOLDER NAME]                                          ${FMT_LIM_PURPLE}X
                                                                           X
-        ${FMT_LIM_ORANGE}• EXAMPLE:${NC}                                                        ${FMT_LIM_BLUE}X
-            ${FMT_LIM_RED}$ >${NC} zi C05                                                    ${FMT_LIM_BLUE}X
+        ${FMT_LIM_ORANGE}• EXAMPLE:${NC}                                                        ${FMT_LIM_PURPLE}X
+            ${FMT_LIM_RED}$ >${NC} zi C05                                                    ${FMT_LIM_PURPLE}X
                                                                           X
                                                                           X
-${FMT_LIM_BLUE}--------------------------------------------------------------------------%
+${FMT_LIM_PURPLE}--------------------------------------------------------------------------%
 Made By: mirr-x              &&     Made By: mdbentaleb                   |
 https://github.com/mirr-x    &&     https://github.com/mdbentaleb         |
 --------------------------------------------------------------------------%

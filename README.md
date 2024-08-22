@@ -42,7 +42,7 @@ ZiTester is a tool designed to test and verify the status of exercise files for 
     ```
 ## Usage
 
-After installation, you can use ziTester to check your exercise files. Navigate to the directory containing your exercise files and run the following command:
+
 
 ```sh
 zi [FOLDER NAME]
@@ -56,7 +56,9 @@ To test the folder C05, navigate to the directory containing the folder and run:
 zi C05
 ```
 
-### Instructions
+## INSTRUCTIONS
+
+*After installation, you can use ziTester to check your exercise files. Navigate to the directory containing your exercise files and run the following command:*
 
 ```
      _ _____          _            
@@ -84,3 +86,5 @@ Made By: mirr-x              &&     Made By: mdbentaleb                   |
 https://github.com/mirr-x    &&     https://github.com/mdbentaleb         |
 --------------------------------------------------------------------------%
 ```
+> **NOTE**:
+*your folder name must be a capital like this C00 C01 ...*
