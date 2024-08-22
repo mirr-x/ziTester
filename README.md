@@ -71,6 +71,23 @@ https://github.com/mirr-x    &&     https://github.com/mdbentaleb         |
 
 https://github.com/user-attachments/assets/eeac925b-3145-49bb-acf1-967a6e46c4c6
 
+## Progress
+
+| Day  | Status |
+|------|--------|
+| SH0  | KO     |
+| SH1  | KO     |
+| C00  | OK     |
+| C01  | OK     |
+| C02  | OK     |
+| C03  | OK     |
+| C04  | OK     |
+| C05  | OK     |
+| C06  | KO     |
+| C07  | KO     |
+| C08  | KO     |
+| C09  | KO     |
+
 
 > **NOTE**:
 *your folder name must be a capital like this C00 C01 ...*
