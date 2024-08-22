@@ -18,7 +18,7 @@ TARGET_DIR="your_directory_here"
  / /| |/ / |  __/\__ \ ||  __/ |   
 /___|_|\/   \___||___/\__\___|_|   
                                    
-                                ${FMT_LIM_GREEN}....is now installed!${NC}
+                                ${FMT_LIM_GREEN}zi!${NC}
 
 ${FMT_LIM_BLUE}
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

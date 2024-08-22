@@ -10,12 +10,9 @@
 
 void z_print_help()
 {
-    printf("  %s'ziteste'%s %sv1.0: A Tester Tool For Students At 42 School By: %s%s>%s %smirr-x%s %s<%s %s&&%s %s>%s %smdbentaleb%s %s<%s\n\n"
-           "%sUsage:%s\n"
-           "%s         ziteste <folder_name>%s\n\n"
-           "%sExample:%s\n"
-           "%s         ziteste C05%s\n",
-           yellow, reset, cyan, reset, yellow, reset, purple, reset, yellow, reset, cyan, reset, yellow, reset, purple, reset, yellow, reset,
-           underline, reset, red, reset,
-           underline, reset, red, reset);
+    char *banner_msg_file_path = "/home/$USER/ziTester/zi_tester/tools/baner.sh";
+    printf("  %s'ziteste'%s %sv1.0: A Tester Tool For Students At 42 School By: %s%s>%s %smirr-x%s %s<%s %s&&%s %s>%s %smdbentaleb%s %s<%s\n\n",
+           yellow, reset, cyan, reset, yellow, reset, purple, reset, yellow, reset, cyan, reset, yellow, reset, purple, reset, yellow, reset);
+    
+    system(banner_msg_file_path);
 }
