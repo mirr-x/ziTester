@@ -60,7 +60,7 @@ zi C05
 
 *After installation, you can use ziTester to check your exercise files. Navigate to the directory containing your exercise files and run the following command:*
 
-```
+```sh
      _ _____          _            
  ___(_)__   \___  ___| |_ ___ _ __ 
 |_  / | / /\/ _ \/ __| __/ _ \ '__|
