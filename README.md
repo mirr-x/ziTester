@@ -1,4 +1,4 @@
-# ziTester && MED-1337
+# ziTester
 
 ![yoo](https://media1.tenor.com/m/oC_e7R9GvZ8AAAAC/rick-and-morty-rtj.gif)
 
@@ -9,13 +9,13 @@
 - [Contributing](#contributing)
 - [License](#license)
 
-## OVERVIEW
-
-ziTester is a tool designed to test and verify the status of exercise files for 42 School students. It runs shell scripts to check each exercise and updates the results accordingly.
+## Overview
 
 ![overveiwImage](assets/xc.png)
 
-## FEATURES
+ZiTester is a tool designed to test and verify the status of exercise files for 42 School students. It runs shell scripts to check each exercise and updates the results accordingly.
+
+## Features
 
 - **File Existence Check**: Verifies if the exercise file exists.
 - **Shell Script Execution**: Runs specific shell scripts to test each exercise.
@@ -29,7 +29,7 @@ ziTester is a tool designed to test and verify the status of exercise files for 
 | KO  | FAILED    |
 | NF  | NOT FOUND |
 
-## INSTALLATION
+## Installation
 
 * **FOR `zsh` :**
 
@@ -42,13 +42,27 @@ ziTester is a tool designed to test and verify the status of exercise files for 
     ```sh
     bash -c "$(curl -fsSL https://raw.githubusercontent.com/mirr-x/ziTester/main/bin/install.sh)"
     ```
+## Usage
 
+
+
+```sh
+zi [FOLDER NAME]
+```
+
+### Example
+
+To test the folder C05, navigate to the directory containing the folder and run:
+
+```sh
+zi C05
+```
 
 ## INSTRUCTIONS
 
-*After installation, you can use ziTester to check your exercise files. Navigate to the directory containing your exercise files and run the following command `zi C00`:*
+*After installation, you can use ziTester to check your exercise files. Navigate to the directory containing your exercise files and run the following command:*
 
-```
+```sh
      _ _____          _            
  ___(_)__   \___  ___| |_ ___ _ __ 
 |_  / | / /\/ _ \/ __| __/ _ \ '__|
