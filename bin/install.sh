@@ -75,7 +75,7 @@ if ! mv "$EXE" "$BIN_DIR"; then
     exit 1
 fi
 
-sleep 1
+sleep 2
 
 # Confirm completion
 if [ -d "$TARGET_DIR" ]; then
