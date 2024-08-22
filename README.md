@@ -21,14 +21,6 @@ ziTester is a tool designed to test and verify the status of exercise files for 
 - **Shell Script Execution**: Runs specific shell scripts to test each exercise.
 - **Status Reporting**: Updates the status of each exercise based on the test results.
 
-### Status Table
-
-| key | value     |
-|-----|-----------|
-| OK  | passed    |
-| KO  | FAILED    |
-| NF  | NOT FOUND |
-
 ## INSTALLATION
 
 * **FOR `zsh` :**
@@ -77,4 +69,3 @@ https://github.com/mirr-x    &&     https://github.com/mdbentaleb         |
 > **NOTE**:
 *your folder name must be a capital like this C00 C01 ...*
 
-`MED-1337`
