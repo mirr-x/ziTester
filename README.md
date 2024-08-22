@@ -1,4 +1,4 @@
-# ziTester && MED-1337
+# ziTester
 
 ![yoo](https://media1.tenor.com/m/oC_e7R9GvZ8AAAAC/rick-and-morty-rtj.gif)
 
@@ -88,3 +88,5 @@ https://github.com/mirr-x    &&     https://github.com/mdbentaleb         |
 ```
 > **NOTE**:
 *your folder name must be a capital like this C00 C01 ...*
+
+`MED-1337`
