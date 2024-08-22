@@ -86,9 +86,9 @@ if [ -d "$TARGET_DIR" ]; then
  / /| |/ / |  __/\__ \ ||  __/ |   
 /___|_|\/   \___||___/\__\___|_|   
                                    
-                                ${FMT_LIM_GREEN}....is now installed!${NC}
-
-${FMT_LIM_BLUE}
+                                ${FMT_LIM_GREEN}....is now installed!${NC}"
+    sleep 1
+    echo -e "${FMT_LIM_BLUE}
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
                                                                           ${FMT_LIM_BLUE}X
 ${FMT_LIM_RED}INSTRUCTIONS:${NC}                                                             ${FMT_LIM_BLUE}X
