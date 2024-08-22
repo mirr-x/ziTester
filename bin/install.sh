@@ -14,9 +14,9 @@ FMT_LIM_RED="\033[38;5;196m"
 FMT_LIM_ORANGE="\033[38;5;202m"
 FMT_LIM_YELLOW="\033[38;5;226m"
 FMT_LIM_GREEN="\033[38;5;082m"
-FMT_LIM_PURPLE="\033[38;5;021m"
-FMT_LIM_BLUE="\033[38;5;093m"
-FMT_LIM_PINK="\033[38;5;163m"
+FMT_LIM_BLUE="\033[38;5;021m"
+FMT_LIM_PURPLE="\033[38;5;093m"
+FMT_LIM_PINK="\033[38;5;163m"PURPLE
 #xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 # Define the path to the project and Makefile
@@ -88,8 +88,8 @@ if [ -d "$TARGET_DIR" ]; then
                                    
                                 ${FMT_LIM_GREEN}....is now installed!${NC}"
     sleep 1
-    echo -e "${FMT_LIM_PURPLE}
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    echo -e "
+${FMT_LIM_PURPLE}xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
                                                                           ${FMT_LIM_PURPLE}X
 ${FMT_LIM_RED}INSTRUCTIONS:${NC}                                                             ${FMT_LIM_PURPLE}X
                                                                           ${FMT_LIM_PURPLE}X
