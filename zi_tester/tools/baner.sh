@@ -20,19 +20,19 @@ TARGET_DIR="your_directory_here"
                                    
                                 ${FMT_LIM_GREEN}zi!${NC}
 
-${FMT_LIM_BLUE}
+${FMT_LIM_PURPLE}
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-                                                                          ${FMT_LIM_BLUE}X
-${FMT_LIM_RED}INSTRUCTIONS:${NC}                                                             ${FMT_LIM_BLUE}X
-                                                                          ${FMT_LIM_BLUE}X
-        ${FMT_LIM_ORANGE}• USAGE:${NC}                                                          ${FMT_LIM_BLUE}X
-            ${FMT_LIM_RED}$ >${NC} zi [FOLDER NAME]                                          ${FMT_LIM_BLUE}X
+                                                                          ${FMT_LIM_PURPLE}X
+${FMT_LIM_RED}INSTRUCTIONS:${NC}                                                             ${FMT_LIM_PURPLE}X
+                                                                          ${FMT_LIM_PURPLE}X
+        ${FMT_LIM_ORANGE}• USAGE:${NC}                                                          ${FMT_LIM_PURPLE}X
+            ${FMT_LIM_RED}$ >${NC} zi [FOLDER NAME]                                          ${FMT_LIM_PURPLE}X
                                                                           X
-        ${FMT_LIM_ORANGE}• EXAMPLE:${NC}                                                        ${FMT_LIM_BLUE}X
-            ${FMT_LIM_RED}$ >${NC} zi C05                                                    ${FMT_LIM_BLUE}X
+        ${FMT_LIM_ORANGE}• EXAMPLE:${NC}                                                        ${FMT_LIM_PURPLE}X
+            ${FMT_LIM_RED}$ >${NC} zi C05                                                    ${FMT_LIM_PURPLE}X
                                                                           X
                                                                           X
-${FMT_LIM_BLUE}--------------------------------------------------------------------------%
+${FMT_LIM_PURPLE}--------------------------------------------------------------------------%
 Made By: mirr-x              &&     Made By: mdbentaleb                   |
 https://github.com/mirr-x    &&     https://github.com/mdbentaleb         |
 --------------------------------------------------------------------------%
