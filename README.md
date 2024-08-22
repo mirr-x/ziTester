@@ -66,6 +66,18 @@ Made By: mirr-x              &&     Made By: mdbentaleb                   |
 https://github.com/mirr-x    &&     https://github.com/mdbentaleb         |
 --------------------------------------------------------------------------%
 ```
+
+## TUTORIAL
+<details>
+  <summary>Video Tutorial</summary>
+  <div style="max-width: 100%; overflow: hidden;">
+    <video style="width: 100%; height: auto;" controls>
+      <source src="assets/tutorial.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</details>
+
 > **NOTE**:
 *your folder name must be a capital like this C00 C01 ...*
 
