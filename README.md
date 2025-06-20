@@ -92,3 +92,8 @@ https://github.com/user-attachments/assets/eeac925b-3145-49bb-acf1-967a6e46c4c6
 > **NOTE**:
 *your folder name must be a capital like this C00 C01 ...*
 
+---
+
+*This repository is for educational purposes only. Unauthorized copying or distribution of this work is prohibited.*
+
+
