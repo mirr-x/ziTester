@@ -47,7 +47,7 @@ ziTester is a tool designed to test and verify the status of exercise files for 
  / /| |/ / |  __/\__ \ ||  __/ |   
 /___|_|\/   \___||___/\__\___|_|   
                                    
-                                zi!
+                                zi !
 
 
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
